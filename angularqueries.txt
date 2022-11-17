@@ -1,0 +1,18 @@
+ng generate module DataHub --routing
+
+ng generate component DataHub/home
+
+ng generate service DataHub/data
+
+ng generate interface DataHub/data
+
+
+
+json-server --watch db.json
+
+
+ postData(){
+    this.ds.createData(this.dataFormHub).subscribe({next:(res)=>{
+      this.router.navigate(["/Datahub/home"])
+    }})
+  }
