@@ -62,6 +62,7 @@ in truncate we cannot use where clouse but in delete we can use where clouse
 
 
 View is virtual table . it conatin rows and column Like real table.
+//command here
 create VIEW viewname as
 select * from table_name;
 
