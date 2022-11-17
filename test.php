@@ -100,4 +100,18 @@ Encapsulation
      php is single inheritance language in which only parent class extends by the child.
 
 
+
+Authentication and Autherization
+
+
+Authentication is the process to check who is the user.
+Autherization is the Process to check what they have access(Like which type of role assign to the Person).
+
+For Example : 
+
+Go to airport show id card its authentication
+
+
+
+
 */
