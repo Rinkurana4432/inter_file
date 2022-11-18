@@ -109,9 +109,18 @@ Autherization is the Process to check what they have access(Like which type of r
 
 For Example : 
 
-Go to airport show id card its authentication
+Go to airport show id card  for authenticate. and when you arrive the gate you show your boarding pass to the flight 
 
 
+
+
+API Interview Questions
+
+REST stands for Representational State Transfer .These serverice Provide Maintainablity and scalability.
+
+SOAP- Soap stands for Simple object Access Protocol.
+
+SOAP is Slow and REST is Faster.
 
 
 */
