@@ -5,7 +5,9 @@
 echo '<pre>';print_r($_SERVER['REQUEST_URI']);
 
 
+//Video URL 
 
+https://www.youtube.com/watch?v=VXVKX4a_SgQ&ab_channel=TestyCodeiz
 
 
 
