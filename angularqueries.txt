@@ -16,3 +16,14 @@ json-server --watch db.json
       this.router.navigate(["/Datahub/home"])
     }})
   }
+
+
+
+// Pull Commands angular Project
+  
+git clone https://github.com/evertonrobertoauler/universal-demo-v5.git
+cd universal-demo-v5
+git checkout cookies
+npm install
+npm run build
+node dist/server.js

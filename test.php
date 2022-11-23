@@ -123,4 +123,13 @@ SOAP- Soap stands for Simple object Access Protocol.
 SOAP is Slow and REST is Faster.
 
 
+
+
+Joins
+
+Inner Join -  This 
+
+
+
+
 */
