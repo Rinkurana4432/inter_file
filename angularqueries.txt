@@ -27,3 +27,14 @@ git checkout cookies
 npm install
 npm run build
 node dist/server.js
+
+
+
+//Git Push Commands
+
+git init
+git status
+git add .
+git commit -m "Comment you want"
+git remote add origin  https://link
+git push  -u origin master
