@@ -2,12 +2,13 @@
 
 //$_SERVER is a special reserved  variable which store all server information
 
+
 echo '<pre>';print_r($_SERVER['REQUEST_URI']);
 
 
 //Video URL 
 
-https://www.youtube.com/watch?v=VXVKX4a_SgQ&ab_channel=TestyCodeiz
+//https://www.youtube.com/watch?v=VXVKX4a_SgQ&ab_channel=TestyCodeiz
 
 
 
@@ -129,7 +130,12 @@ SOAP is Slow and REST is Faster.
 
 Joins
 
-Inner Join -  This 
+Innner Joins get all matching Records From Both tables.
+Outer joins get all matching and non matching records from Both table.
+Left Joins get All Records of Left table and Get all Rows from right Table those are matching.
+Right Joins get All Records from Right Table and matchig rows from left table.
+The CROSS JOIN keyword returns all records from both tables (table1 and table2).
+  
 
    
 
