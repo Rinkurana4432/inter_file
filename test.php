@@ -5,7 +5,20 @@
 
 echo '<pre>';print_r($_SERVER['REQUEST_URI']);
 
+/*To Get the ip address we use $_SERVER['REMOTE_ADD'];
 
+GET can handle a maximum of 2048 characters, POST has no such restrictions.
+
+Traits allow to create a reuse code.
+
+//Preventing SQL injection in PHP
+1)Sanitize user input
+
+use mysql_real_escape_string(). Basically, what it does it remove all special characters in a string
+
+
+
+*/
 //Video URL 
 
 //https://www.youtube.com/watch?v=VXVKX4a_SgQ&ab_channel=TestyCodeiz
