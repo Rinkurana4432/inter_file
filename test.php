@@ -3,13 +3,14 @@
 //$_SERVER is a special reserved  variable which store all server information
 
 
-echo '<pre>';print_r($_SERVER['REQUEST_URI']);
+echo '<pre>';print_r($_SERVER['REQUEST_URI']); // using this we can get current url 
 
 /*To Get the ip address we use $_SERVER['REMOTE_ADD'];
 
 GET can handle a maximum of 2048 characters, POST has no such restrictions.
 
 Traits allow to create a reuse code.
+Traits are machanism to reuse the code in single inheritance language such as php.Traits reduce the single inheritance language .
 
 //Preventing SQL injection in PHP
 1)Sanitize user input
@@ -64,7 +65,7 @@ Trigger can be executed automatically on some specified action invoked like inse
 
 
 
-Traits are machanism to reuse the code in single inheritance language such as php.Traits reduce the single inheritance language .
+
 
 
 
@@ -113,6 +114,8 @@ Encapsulation
  is hiding the implementation details and expose only method.
  
  Inheritance
+       is the process to child inherit all the properties and methods  from Parent Class.
+	   
      php is single inheritance language in which only parent class extends by the child.
 
 
