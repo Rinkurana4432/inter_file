@@ -1,9 +1,15 @@
 <?php
+for($i=0;$i<=5;$i++){
+	for($j=1;$j<=$i;$j++){
+		echo '*';
+	}
+	echo'<br/>';
+} 
 
 //$_SERVER is a special reserved  variable which store all server information
 
 
-echo '<pre>';print_r($_SERVER['REQUEST_URI']); // using this we can get current url 
+//echo '<pre>';print_r($_SERVER['REQUEST_URI']); // using this we can get current url 
 
 /*To Get the ip address we use $_SERVER['REMOTE_ADD'];
 
@@ -151,6 +157,24 @@ Outer joins get all matching and non matching records from Both table.
 Left Joins get All Records of Left table and Get all Rows from right Table those are matching.
 Right Joins get All Records from Right Table and matchig rows from left table.
 The CROSS JOIN keyword returns all records from both tables (table1 and table2).
+
+
+#Explain the difference between $message and $$message
+
+$message is a variable and $$message is refrenced variable.
+
+#Variables in php
+array,object,integer,NULL,Duble,Boolean
+
+
+5 array function
+
+array(),count(),array_search(),in_array(),in_array(),array_combine(),array_mearge()
+
+
+
+
+Polymorphism − This is an object oriented concept where same function can be used for different purposes. For example function name will remain same but it make take different number of arguments and can do different task.
   
 
    
