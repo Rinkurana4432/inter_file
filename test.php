@@ -6,6 +6,12 @@ for($i=0;$i<=5;$i++){
 	echo'<br/>';
 } 
 
+
+
+
+
+
+
 //$_SERVER is a special reserved  variable which store all server information
 
 
