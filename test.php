@@ -192,7 +192,9 @@ Opps
 
 Interface allow to specify which method and classs  is implemented is called interface.
 
-Polymorphism is a OOP Patern that enables the  numerious classes with diffrent functionalities is called polymorphism.  
+Polymorphism is a OOP Patern that enables the  numerious classes with diffrent functionalities is called polymorphism.  (same Fucnction can be used for diffrent purpose is called Polymorphism)
+
+Encapsulation is the wrapping up the member variable and function into a single unit is called encapusulation.
 
    
 Access Modifire
