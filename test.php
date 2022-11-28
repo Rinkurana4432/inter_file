@@ -160,7 +160,7 @@ Joins
 
 Innner Joins get all matching Records From Both tables.
 Outer joins get all matching and non matching records from Both table.
-Left Joins get All Records of Left table and Get all Rows from right Table those are matching.
+Left Joins get All Records of Left table and matching Rows from right Table those are matching.
 Right Joins get All Records from Right Table and matchig rows from left table.
 The CROSS JOIN keyword returns all records from both tables (table1 and table2).
 
@@ -182,8 +182,46 @@ array(),count(),array_search(),in_array(),in_array(),array_combine(),array_mearg
 
 Polymorphism − This is an object oriented concept where same function can be used for different purposes. For example function name will remain same but it make take different number of arguments and can do different task.
   
+  
+
+Helper is group of function that assist the user to perform a Specific Task.
+
+
+
+Opps
+
+Interface allow to specify which method and classs  is implemented is called interface.
+
+Polymorphism is a OOP Patern that enables the  numerious classes with diffrent functionalities is called polymorphism.  
 
    
+Access Modifire
 
+public - the property or method can be accessed from everywhere. This is default
+protected - the property or method can be accessed within the class and by classes derived from that class
+private - the property or method can ONLY be accessed within the class
+
+
+Examples 
+
+class fruit(){
+	Public $name;
+	Protected $color;
+	Private $weight;
+}
+
+  $f = new fruit();
+  
+  $f->name = "mango";
+  $f->color = "yellow";
+  $f->weight ="300";
+  
+  
+  Questions: what is object in class.
+  Answers: Object is Instance of class.
+  
+  
+  
+  
 
 */
