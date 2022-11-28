@@ -190,7 +190,7 @@ Helper is group of function that assist the user to perform a Specific Task.
 
 Opps
 
-Interface allow to specify which method and classs  is implemented is called interface.
+Interface allow you to specify what methods a class should implement..
 
 Polymorphism is a OOP Patern that enables the  numerious classes with diffrent functionalities is called polymorphism.  (same Fucnction can be used for diffrent purpose is called Polymorphism)
 
