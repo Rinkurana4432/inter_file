@@ -327,9 +327,11 @@ When the data disk is full and overloaded, the way out is to create a soft link 
 	$user = Yii::app()->db->createCommand()
     ->select('id, username, profile')
     ->from('tbl_user u')
-    ->join('tbl_profile p', 'u.id=p.user_id')
     ->where('id=:id', array(':id'=>$id))
     ->queryRow();
+	
+	Insert Command
+	Yii::app()->db->createCommand()->insert('tbl_user',['name' => 'yii','status' => 1,])->execute();
 	
 	
 	
