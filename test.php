@@ -1,12 +1,30 @@
 <?php
-for($i=0;$i<=5;$i++){
-	for($j=1;$j<=$i;$j++){
-		echo '*';
-	}
-	echo'<br/>';
-} 
+// for($i=0;$i<=5;$i++){
+	// for($j=1;$j<=$i;$j++){
+		// echo '*';
+	// }
+	// echo'<br/>';
+// } 
 
+// $date1 = '2022-01-25';
+// $date2 = '2022-07-20';
 
+// $DS1 =strtotime($date1);
+// $DS2 =strtotime($date2);
+
+   // $year1 = date('Y',$DS1);
+   // $year2 = date('Y',$DS2);
+   
+   
+  // $month1 = date('m',$DS1);
+  // $month2 = date('m',$DS2);
+  
+  
+ // echo $diff = (($year2 - $year1) * 12) + ($month2 - $month1);
+ 
+ 
+
+  
 
 
 
@@ -234,8 +252,61 @@ class fruit(){
   4)Its free to use.
   5)mysql is low memory Leakage.
   
+  Mysql is supported by oracle and based on structured query lannguage.
   
-  
-  
+
+question:- What is heap table.
+Answers:- These are avilable in memory for high speed storage Temporarliy.Heap tables and indexes do not support an auto-increment function and should be NOT NULL.
+
+
+Name the diffrent type of table in mysql.
+
+MYISAM” is the default storage engine in MySQL
+
+1)MYISAM
+2)ISAM     //Indexd Sequential assess method
+3)HEAP
+4)Mearge
+5)Inno DB
+
+
+Questions: How can you change the root password if it is lost?
+In such cases when the password is lost, the user should start the DB with skip-grants-table and then change the password. Thereafter, with the new password, the user should restart the DB in a normal mode.
+
+Questions: How to resolve the problem of the data disk that is full?
+When the data disk is full and overloaded, the way out is to create a soft link and move the .frm and the .idb files into that link location.
+
+
+ 
+ 
+ Questions : what is Localstorage.
+ Answers: Local storage is Client side and PHP is server side,so you cannot access Local Storage on the server until the client loads the page.
+ 
+ 
+ 
+ how to store data in local storage in php 
+
+		function createItem() {
+				localStorage. setItem('nameOfItem', 'value');
+		}
+			createItem() // Creates a item named 'nameOfItem' and stores a value of 'value'
+​
+		function getValue() {
+				return localStorage.
+		} // Gets the value of 'nameOfItem' and returns it.
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
 
 */
