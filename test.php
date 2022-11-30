@@ -22,9 +22,24 @@
   
  // echo $diff = (($year2 - $year1) * 12) + ($month2 - $month1);
  
- 
+ ?>
+<!--form  method="post">
+<input type="text" name="tbl" value="">
 
+<input type="submit" name="submit" >
+
+</form-->
+
+
+<?php
+// if(isset($_POST['tbl'])){
+
+  // for ($i=1;$i<=10;$i++){
+	  
+	  // echo   $_POST['tbl'] .' x ' . $i .' = '. $_POST['tbl']*$i .'<br/>';
+  // }
   
+// }
 
 
 
@@ -299,7 +314,22 @@ When the data disk is full and overloaded, the way out is to create a soft link 
 	
 	
 	
+	//Yii2
 	
+	How to get Last inserted id.
+	
+	$id = Yii::$app->db->getLastInsertID();
+	
+	
+	Select Command
+	
+	
+	$user = Yii::app()->db->createCommand()
+    ->select('id, username, profile')
+    ->from('tbl_user u')
+    ->join('tbl_profile p', 'u.id=p.user_id')
+    ->where('id=:id', array(':id'=>$id))
+    ->queryRow();
 	
 	
 	
