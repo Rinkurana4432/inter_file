@@ -180,7 +180,7 @@ array(),count(),array_search(),in_array(),in_array(),array_combine(),array_mearg
 
 
 
-Polymorphism − This is an object oriented concept where same function can be used for different purposes. For example function name will remain same but it make take different number of arguments and can do different task.
+
   
   
 
@@ -192,7 +192,7 @@ Opps
 
 Interface allow you to specify what methods a class should implement..
 
-Polymorphism is a OOP Patern that enables the  numerious classes with diffrent functionalities is called polymorphism.  (same Fucnction can be used for diffrent purpose is called Polymorphism)
+Polymorphism is a OOPs Pattern that enables the  numerious classes with diffrent functionalities is called polymorphism.  (same Fucnction can be used for diffrent purpose is called Polymorphism)
 
 Encapsulation is the wrapping up the member variable and function into a single unit is called encapusulation.
 
@@ -221,6 +221,18 @@ class fruit(){
   
   Questions: what is object in class.
   Answers: Object is Instance of class.
+  
+  
+  
+  
+  
+  Features of MYSQL 
+  
+  1)Mysql is Freely avilable System.
+  2)Mysql Can Run on multiple Platefroms such as linux , unix and window.
+  3)mysql gives high performance result without losing essential functionality.
+  4)Its free to use.
+  5)mysql is low memory Leakage.
   
   
   
