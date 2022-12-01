@@ -62,6 +62,10 @@ Traits are machanism to reuse the code in single inheritance language such as ph
 
 use mysql_real_escape_string(). Basically, what it does it remove all special characters in a string
 
+use trim() function and strip_tags() . trim function remove the blank space and strip_tags strips the html and php tags.
+
+
+
 
 
 */
@@ -75,6 +79,9 @@ use mysql_real_escape_string(). Basically, what it does it remove all special ch
 
 
 //Function is a block of statement. A function not execute automatically on Page Load.and return value.
+
+//Cookies and Sessions are used to store information. Cookies are only stored on the client-side machine, while sessions get stored on the client as well as the server.
+//Cookies are little text-based files that are kept on the user's computer and are accessible only by that user's browser. It is possible for a cookie's size to reach a maximum of 4 KB.
 
 //Cookies is client side on local computer
 
@@ -115,7 +122,8 @@ Trigger can be executed automatically on some specified action invoked like inse
 
 
 unique key can be NULL value but primary key cannot be a NULL Value.
-Primary key is only one in table and unique key is more than one
+Primary key is only one in table and unique key is more than one.
+Forgien key is a primary key of another table. Its used to join two or more table . 
 
 Truncate is faster then delete
 we can not rollback truncated file but deleted file we can rollback
@@ -156,10 +164,10 @@ $obj->name();
 $obj->price();
 
 Encapsulation
- is hiding the implementation details and expose only method.
+ Is hiding the implementation details and expose only method.( encapusulation hide the internal functionalities of the program) for example we start a car using press the start button but we do'nt  know the internal functionality of car start
  
  Inheritance
-       is the process to child inherit all the properties and methods  from Parent Class.
+       is the process to child inherit all the properties and methods  from Parent Class using  extend method.
 	   
      php is single inheritance language in which only parent class extends by the child.
 
@@ -208,7 +216,7 @@ array,object,integer,NULL,Duble,Boolean
 
 5 array function
 
-array(),count(),array_search(),in_array(),in_array(),array_combine(),array_mearge()
+array(),count(),array_search(),in_array(),array_combine(),array_mearge()
 
 
 
@@ -260,12 +268,17 @@ class fruit(){
   
   
   Features of MYSQL 
+  Mysql is cross platform data base server. it can run on Different plateform like Linux,Solaris and Windows etc,
+  
+  mysql is very easy to use.You can build and interact with MySQL with only the basic knowledge of MySQL and a few simple SQL statements.
   
   1)Mysql is Freely avilable System.
   2)Mysql Can Run on multiple Platefroms such as linux , unix and window.
   3)mysql gives high performance result without losing essential functionality.
   4)Its free to use.
   5)mysql is low memory Leakage.
+  6) Mysql gives the high productivity with the help of view,Trigger and Stored Procedure.
+  7) Mysql allow transaction to be rollback.
   
   Mysql is supported by oracle and based on structured query lannguage.
   
