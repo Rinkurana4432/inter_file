@@ -138,9 +138,31 @@ select * from table_name;
 
 if you have a complex mysql queries you can make a view to simplify the queries.
 
-stored procedure  is a group of statement that can be execte.
+stored procedure  is a group of statement that save in the database.
+//Using this type we can create in database 
+CREATE PROCEDURE procedure_name [ (parameter datatype [, parameter datatype]) ]    
+BEGIN    
+    Body_section of SQL statements  
+END; 
 
-stored procedure is used for insert update and delete.
+Q: how to execute the stored Procedure.
+A: We can execute the a stored Procedure using CALL query.
+  CALL Fucntion_name(data)   
+  
+	stored procedure is used for insert update and delete.
+
+Q: what is index in mysql.
+A: Indexes are used to retrieve data from the database more quickly than otherwise. The users cannot see the indexes, they are just used to speed up searches/queries.
+
+	syntax---
+	CREATE INDEX index_name
+	ON table_name (column1, column2, ...);
+Q: what is unique index.
+A: In unique index duplicate value are not allowed.
+   syntax---
+	CREATE UNIQUE INDEX index_name
+	ON table_name (column1, column2, ...);
+
 
 and view is used for select Command only.
 
@@ -289,10 +311,12 @@ Answers:- These are avilable in memory for high speed storage Temporarliy.Heap t
 
 Name the diffrent type of table in mysql.
 
-MYISAM” is the default storage engine in MySQL
+MYISAM  "is the default storage engine in MySQL
+
+
 
 1)MYISAM
-2)ISAM     //Indexd Sequential assess method
+2)ISAM     //Indexd Sequential access method
 3)HEAP
 4)Mearge
 5)Inno DB
@@ -304,7 +328,8 @@ In such cases when the password is lost, the user should start the DB with skip-
 Questions: How to resolve the problem of the data disk that is full?
 When the data disk is full and overloaded, the way out is to create a soft link and move the .frm and the .idb files into that link location.
 
-
+Q:How to change the MySQL password?
+A:ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword';  
  
  
  Questions : what is Localstorage.
@@ -321,7 +346,7 @@ When the data disk is full and overloaded, the way out is to create a soft link 
 ​
 		function getValue() {
 				return localStorage.
-		} // Gets the value of 'nameOfItem' and returns it.
+		}      //Gets the value of 'nameOfItem' and returns it.
 
 	
 	
@@ -339,13 +364,18 @@ When the data disk is full and overloaded, the way out is to create a soft link 
 	
 	$user = Yii::app()->db->createCommand()
     ->select('id, username, profile')
-    ->from('tbl_user u')
+    ->from('tbl_user')
     ->where('id=:id', array(':id'=>$id))
     ->queryRow();
 	
 	Insert Command
 	Yii::app()->db->createCommand()->insert('tbl_user',['name' => 'yii','status' => 1,])->execute();
 	
+	
+	What is JSON.
+	1) JSON stands for javascript object notation.
+	2) JSON is light weight format for data sorting and transporting data.
+	3) JSON is used when data is sent from server to web page.
 	
 	
 	
