@@ -58,6 +58,7 @@ Traits allow to create a reuse code.
 Traits are machanism to reuse the code in single inheritance language such as php.Traits reduce the single inheritance language .
 
 //Preventing SQL injection in PHP
+//////
 1)Sanitize user input
 
 use mysql_real_escape_string(). Basically, what it does it remove all special characters in a string
@@ -131,12 +132,12 @@ in truncate we cannot use where clouse but in delete we can use where clouse
 
 
 
-View is virtual table . it conatin rows and column Like real table.
+View is  a virtual table . it conatin rows and column Like real table.
 //command here
 create VIEW viewname as
 select * from table_name;
 
-if you have a complex mysql queries you can make a view to simplify the queries.
+if we have a complex mysql queries we can make a view to simplify the queries.
 
 stored procedure  is a group of statement that save in the database.
 //Using this type we can create in database 
@@ -217,6 +218,11 @@ SOAP- Soap stands for Simple object Access Protocol.
 SOAP is Slow and REST is Faster.
 
 
+JSON stands for JavaScript Object Notation. JSON is a lightweight format for storing and transporting data.JSON is often used when data is sent from a server to a web page.
+
+A JSON web token(JWT) is JSON Object which is used to securely transfer information over the web(between two parties).
+
+
 
 
 Joins
@@ -242,6 +248,10 @@ array(),count(),array_search(),in_array(),array_combine(),array_mearge()
 
 
 
+We use array_merge() function to merge one or more arrays into one array. In this process, the array elements are appended to the end of the previous array to return the new array.
+
+We use array_combine() function to combine two arrays and creates a new array using one array as key and another as value. It takes two parameters and both should have the same number of elements otherwise it will show a warning message
+
 
 
   
@@ -266,6 +276,14 @@ public - the property or method can be accessed from everywhere. This is default
 protected - the property or method can be accessed within the class and by classes derived from that class
 private - the property or method can ONLY be accessed within the class
 
+////////
+Interfaces allow you to specify what methods a class should implement.
+
+Interfaces make it easy to use a variety of different classes in the same way
+
+
+
+Name Space is a object oriented concept. Namespaces are used to establish a relationship among classes, functions, and constants. A Namespace can be defined using the keyword The namespace.
 
 Examples 
 
