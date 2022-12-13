@@ -265,7 +265,8 @@ Opps
 
 Interface allow you to specify what methods a class should implement..
 
-Polymorphism is a OOPs Pattern that enables the  numerious classes with diffrent functionalities is called polymorphism.  (same Fucnction can be used for diffrent purpose is called Polymorphism)
+Polymorphism is a OOPs Pattern that enables the  numerious classes with diffrent functionalities is called polymorphism.  
+(same Fucnction can be used for diffrent purpose is called Polymorphism)
 
 Encapsulation is the wrapping up the member variable and function into a single unit is called encapusulation.
 
@@ -283,7 +284,8 @@ Interfaces make it easy to use a variety of different classes in the same way
 
 
 
-Name Space is a object oriented concept. Namespaces are used to establish a relationship among classes, functions, and constants. A Namespace can be defined using the keyword The namespace.
+Namespace is a object oriented concept. Namespaces are used to establish a relationship among classes, functions, and constants. 
+A Namespace can be defined using the keyword The namespace.
 
 Examples 
 
@@ -367,8 +369,7 @@ A:ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword';
 		}      //Gets the value of 'nameOfItem' and returns it.
 
 	
-	
-	
+
 	
 	//Yii2
 	
@@ -401,7 +402,8 @@ A:ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword';
 	Q: What is middle ware in laravel.
 	A: Middleware provide a convenient mechanism for filtering HTTP requests entering your application. For example, Laravel includes a middleware that verifies the user of your application is authenticated. If the user is not authenticated, the middleware will redirect the user to the login screen. However, if the user is authenticated, the middleware will allow the request to proceed further into the application.
 	
-	
+	Q: What are migrations in Laravel?
+    A: Migration is a feature of Laravel that allows you to modify and share the application's database schema.
 
 
 */
