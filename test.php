@@ -1,7 +1,8 @@
 <?php
-
+/*
 //Q: Load Balancer for overload Traffic on website.
-// Load balancing is a core networking solutions used to distribute the traffic accorss the multiple server.Load balancer improve the application availability and server overload. 
+// Load balancing is a core networking solutions used to distribute the traffic accorss the multiple server.
+Load balancer improve the application availability and server overload. 
 
 
 //require() and require_once() both are used to include the file but second function check the php secript  is already added or not before the execution.
@@ -89,7 +90,8 @@ After Update
 Before Delete
 After Delete
 
-Trigger can be executed automatically on some specified action invoked like insert update and delete.for example you want set if any data is inserted then email is send then after insert trigger is run.
+Trigger can be executed automatically on some specified action invoked like insert update and delete.
+for example you want set if any data is inserted then email is send then after insert trigger is run.
 
 
 
@@ -130,7 +132,8 @@ A: We can execute the a stored Procedure using CALL query.
 	stored procedure is used for insert update and delete.
 
 Q: what is index in mysql.
-A: Indexes are used to retrieve data from the database more quickly than otherwise. The users cannot see the indexes, they are just used to speed up searches/queries.
+A: Indexes are used to retrieve data from the database more quickly than otherwise. 
+   The users cannot see the indexes, they are just used to speed up searches/queries.
 
 	syntax---
 	CREATE INDEX index_name
@@ -164,7 +167,8 @@ $obj->name();
 $obj->price();
 
 Encapsulation
- Is hiding the implementation details and expose only method.( encapusulation hide the internal functionalities of the program) for example we start a car using press the start button but we do'nt  know the internal functionality of car start
+ Is hiding the implementation details and expose only method.( encapusulation hide the internal functionalities of the program) 
+ for example we start a car using press the start button but we do'nt  know the internal functionality of car start
  
  Inheritance
        is the process to child inherit all the properties and methods  from Parent Class using  extend method.
@@ -195,7 +199,8 @@ SOAP- Soap stands for Simple object Access Protocol.
 SOAP is Slow and REST is Faster.
 
 
-JSON stands for JavaScript Object Notation. JSON is a lightweight format for storing and transporting data.JSON is often used when data is sent from a server to a web page.
+JSON stands for JavaScript Object Notation. JSON is a lightweight format for storing and 
+transporting data.JSON is often used when data is sent from a server to a web page.
 
 A JSON web token(JWT) is JSON Object which is used to securely transfer information over the web(between two parties).
 
@@ -225,9 +230,12 @@ array(),count(),array_search(),in_array(),array_combine(),array_mearge()
 
 
 
-We use array_merge() function to merge one or more arrays into one array. In this process, the array elements are appended to the end of the previous array to return the new array.
+We use array_merge() function to merge one or more arrays into one array. In this process, 
+the array elements are appended to the end of the previous array to return the new array.
 
-We use array_combine() function to combine two arrays and creates a new array using one array as key and another as value. It takes two parameters and both should have the same number of elements otherwise it will show a warning message
+We use array_combine() function to combine two arrays and creates a new array using 
+one array as key and another as value. It takes two parameters and both should have the same number 
+of elements otherwise it will show a warning message.
 
 
 
@@ -377,7 +385,7 @@ A:ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword';
 	
 	
 	Q: What is middle ware in laravel.
-	A: Middleware provide a convenient mechanism for filtering HTTP requests entering your application. For example, Laravel includes a middleware that verifies the user of your application is authenticated. If the user is not authenticated, the middleware will redirect the user to the login screen. However, if the user is authenticated, the middleware will allow the request to proceed further into the application.
+	A: Middleware provide a convenient mechanism for filtering HTTP requests entering the application. For example, Laravel includes a middleware that verifies the user of your application is authenticated. If the user is not authenticated, the middleware will redirect the user to the login screen. However, if the user is authenticated, the middleware will allow the request to proceed further into the application.
 	
 	Q: What are migrations in Laravel?
     A: Migration is a feature of Laravel that allows you to modify and share the application's database schema.
@@ -397,3 +405,4 @@ A:ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword';
 
 
 */
+
