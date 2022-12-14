@@ -1,62 +1,4 @@
 <?php
-// for($i=0;$i<=5;$i++){
-	// for($j=1;$j<=$i;$j++){
-		// echo '*';
-	// }
-	// echo'<br/>';
-// } 
-
-// $date1 = '2022-01-25';
-// $date2 = '2022-07-20';
-
-// $DS1 =strtotime($date1);
-// $DS2 =strtotime($date2);
-
-   // $year1 = date('Y',$DS1);
-   // $year2 = date('Y',$DS2);
-   
-   
-  // $month1 = date('m',$DS1);
-  // $month2 = date('m',$DS2);
-  
-  
- // echo $diff = (($year2 - $year1) * 12) + ($month2 - $month1);
- 
- 
-
-$numbers = array(1,3,4,5,7,9,10);
-
-for ($i=1; $i <= 10; $i++) {
-  foreach ($numbers as $k) {
-    if ($k == $i) {
-      $found = true;
-    }
-  }
-  if($found == false)
-	  echo $i.'<br>';
-  $found=false;
-}
-
- 
- ?>
-<!--form  method="post">
-<input type="text" name="tbl" value="">
-
-<input type="submit" name="submit" >
-
-</form-->
-
-
-<?php
-// if(isset($_POST['tbl'])){
-
-  // for ($i=1;$i<=10;$i++){
-	  
-	  // echo   $_POST['tbl'] .' x ' . $i .' = '. $_POST['tbl']*$i .'<br/>';
-  // }
-  
-// }
-
 
 //Q: Load Balancer for overload Traffic on website.
 // Load balancing is a core networking solutions used to distribute the traffic accorss the multiple server.Load balancer improve the application availability and server overload. 
@@ -75,7 +17,7 @@ for ($i=1; $i <= 10; $i++) {
 GET can handle a maximum of 2048 characters, POST has no such restrictions.
 
 Traits allow to create a reuse code.
-Traits are machanism to reuse the code in single inheritance language such as php.Traits reduce the single inheritance language .
+Traits are machanism to reuse the code in single inheritance language such as php.Traits reduce the single inheritance language.
 
 //Preventing SQL injection in PHP
 //////
