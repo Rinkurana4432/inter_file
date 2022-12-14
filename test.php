@@ -22,6 +22,22 @@
   
  // echo $diff = (($year2 - $year1) * 12) + ($month2 - $month1);
  
+ 
+
+$numbers = array(1,3,4,5,7,9,10);
+
+for ($i=1; $i <= 10; $i++) {
+  foreach ($numbers as $k) {
+    if ($k == $i) {
+      $found = true;
+    }
+  }
+  if($found == false)
+	  echo $i.'<br>';
+  $found=false;
+}
+
+ 
  ?>
 <!--form  method="post">
 <input type="text" name="tbl" value="">
@@ -40,9 +56,13 @@
   // }
   
 // }
+//loat balancer and elasticity
+
+//Q: Load Balancer for overload Traffic on website.
+// Load balancing is a core networking solutions used to distribute the traffic accorss the multiple server.Load balancer improve the application availability and server overload. 
 
 
-
+//require() and require_once() both are used to include the file but second function check the php secript  is already added or not before the execution.
 
 
 //$_SERVER is a special reserved  variable which store all server information
@@ -84,9 +104,9 @@ use trim() function and strip_tags() . trim function remove the blank space and 
 //Cookies and Sessions are used to store information. Cookies are only stored on the client-side machine, while sessions get stored on the client as well as the server.
 //Cookies are little text-based files that are kept on the user's computer and are accessible only by that user's browser. It is possible for a cookie's size to reach a maximum of 4 KB.
 
-//Cookies is client side on local computer
+//Cookies is client side on local computer using unset($_COOKIE['key']);
 
-// Session is stored data on server side 
+// Session is stored data on server side using session_destroy()  we distroy the session
 
 //Cookies  stored on limit data
 // Cookies is not secure
