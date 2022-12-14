@@ -56,7 +56,7 @@ for ($i=1; $i <= 10; $i++) {
   // }
   
 // }
-//loat balancer and elasticity
+
 
 //Q: Load Balancer for overload Traffic on website.
 // Load balancing is a core networking solutions used to distribute the traffic accorss the multiple server.Load balancer improve the application availability and server overload. 
