@@ -21,14 +21,29 @@ Traits are machanism to reuse the code in single inheritance language such as ph
 
 //Preventing SQL injection in PHP
 //////
-1)Sanitize user input
+1) Sanitize user input
+2) SQL injection is a method where a malicious user can inject some SQL commands to display other information or destroy the database
 
 use mysql_real_escape_string(). Basically, what it does it remove all special characters in a string
 
 use trim() function and strip_tags() . trim function remove the blank space and strip_tags strips the html and php tags.
 
 
+//Steps for make a website for secure
 
+
+->Passwords are encrypted using bcrypt()
+->All messages are encrypted using mcrypt_ecb()
+->Pages can only be accessed when isset($_SESSION["id"]) ie logged in.
+->error_reporting(0);to hide errors.
+->$_POST instead of $_REQUEST
+->mysql_real_escape_string(); for every input
+
+
+My Sql Query to get second heighest salary  From database 
+
+
+Select Salary from employee where salaray order by salary desc limit 1,1 // if we get third highest salary then we have change the first number in query that is 1 or 2
 
 
 */
@@ -366,6 +381,16 @@ A:ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword';
 	
 	Q: What are migrations in Laravel?
     A: Migration is a feature of Laravel that allows you to modify and share the application's database schema.
+	
+	
+	
+	
+	
+	
+	str_replace php function is used to replace the string str_replace('replaced string','replaced_by',$string);
+	
+	$string = 'Hello Dear where are you';
+	str_pos is used to get the string Position str_pos($string,'Dear');output = 6
 
 
 */
