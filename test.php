@@ -273,6 +273,15 @@ Namespace is a object oriented concept. Namespace allows us to use the same func
  the same program without causing a name collision. 
 A Namespace can be defined using the keyword The namespace.
 
+
+function overloading
+
+The OOPs feature function overloading consists same function name and the function performs various tasks according to the number of arguments.
+
+function overriding
+
+In OOPs feature function overriding, both child and parent classes will have the same function name and a different number of arguments.
+
 Examples 
 
 class fruit(){
