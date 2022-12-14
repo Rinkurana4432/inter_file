@@ -269,7 +269,8 @@ Interfaces make it easy to use a variety of different classes in the same way
 
 
 
-Namespace is a object oriented concept. Namespaces are used to establish a relationship among classes, functions, and constants. 
+Namespace is a object oriented concept. Namespace allows us to use the same function or class name in different parts of
+ the same program without causing a name collision. 
 A Namespace can be defined using the keyword The namespace.
 
 Examples 
