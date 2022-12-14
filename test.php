@@ -387,10 +387,13 @@ A:ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword';
 	
 	
 	
-	str_replace php function is used to replace the string str_replace('replaced string','replaced_by',$string);
+	==> str_replace php function is used to replace the string str_replace('replaced string','replaced_by',$string);
 	
 	$string = 'Hello Dear where are you';
-	str_pos is used to get the string Position str_pos($string,'Dear');output = 6
+	==> str_pos is used to get the string Position str_pos($string,'Dear');output = 6
+	
+	==> substr function is used to like we want to show first 100 characters from string 
+	       then we use substr($string,0,100);
 
 
 */
