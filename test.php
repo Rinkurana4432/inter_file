@@ -228,6 +228,13 @@ array,object,integer,NULL,Duble,Boolean
 
 array(),count(),array_search(),in_array(),array_combine(),array_mearge()
 
+sort() - sort arrays in ascending order
+rsort() - sort arrays in descending order
+asort() - sort associative arrays in ascending order, according to the value
+ksort() - sort associative arrays in ascending order, according to the key
+arsort() - sort associative arrays in descending order, according to the value
+krsort() - sort associative arrays in descending order, according to the key
+
 
 
 We use array_merge() function to merge one or more arrays into one array. In this process, 
@@ -261,6 +268,8 @@ Access Modifire
 public - the property or method can be accessed from everywhere. This is default
 protected - the property or method can be accessed within the class and by classes derived from that class
 private - the property or method can ONLY be accessed within the class
+public -
+final: The class methods defined as final, can not be changed or overriden by any subclass.
 
 ////////
 Interfaces allow you to specify what methods a class should implement.
