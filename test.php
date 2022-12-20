@@ -337,6 +337,18 @@ MYISAM  "is the default storage engine in MySQL
 5)Inno DB
 
 
+
+MYISAM:
+
+MYISAM supports Table-level Locking
+MyISAM designed for need of speed
+MyISAM does not support foreign keys hence 
+
+InnoDB supports Row-level Locking
+InnoDB designed for maximum performance when processing high volume of data
+InnoDB support foreign keys hence 
+
+
 Questions: How can you change the root password if it is lost?
 In such cases when the password is lost, the user should start the DB with skip-grants-table and then change the password. Thereafter, with the new password, the user should restart the DB in a normal mode.
 
@@ -412,6 +424,11 @@ A:ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword';
 	
 	==> substr function is used to like we want to show first 100 characters from string 
 	       then we use substr($string,0,100);
+		   
+		   
+		   
+		   
+		   
 
 
 */
