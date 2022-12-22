@@ -112,6 +112,8 @@ in truncate we cannot use where clouse but in delete we can use where clouse
 
 
 View is  a virtual table . it conatin rows and column Like real table.
+using view Simplifying complex queries 
+using view Putting extra layer of security 
 //command here
 create VIEW viewname as
 select * from table_name;
@@ -174,7 +176,7 @@ Encapsulation
        is the process to child inherit all the properties and methods  from Parent Class using  extend method.
 	   
      php is single inheritance language in which only parent class extends by the child.
-
+Polymorphism in OOPs is a concept that allows you to create classes with different functionalities in a single interface.
 
 
 Authentication and Autherization
@@ -228,6 +230,7 @@ array,object,integer,NULL,Duble,Boolean
 
 array(),count(),array_search(),in_array(),array_combine(),array_mearge()
 
+five array sorting function
 sort() - sort arrays in ascending order
 rsort() - sort arrays in descending order
 asort() - sort associative arrays in ascending order, according to the value
@@ -433,6 +436,10 @@ A:ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword';
 	==> substr function is used to like we want to show first 100 characters from string 
 	       then we use substr($string,0,100);
 		   
+	==> echo 
+
+    ==> printf	
+		   
 
 
 synchronous in javascript
@@ -450,23 +457,22 @@ In asynchronous operations, on the other hand, you can move to another task befo
 
 SetTimeout function
 --------------------
-Allow us to run the function once after the interval of time
+Allow us to run the function once after the given interval of time
 
+setInerval function
+-------------------
 
-ClearTimeout function
---------------------
-Allow us to run the function repeatedaly after the interval of time
-
+this function continue calling the function give time interval.
 
 
 
 Dffrence between var let and const
 
-var in which we can declare the variable and assign the value again
+var - in which we can declare the variable and assign the value again
 
-let using let we can assign the value but cannot declare 
+let - using let we can assign the value but cannot declare 
 
-const using const we cannot declare and assign the 
+const - using const we cannot declare and assign again
 	 
 		   
 		   
