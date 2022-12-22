@@ -5,7 +5,7 @@
 Load balancer improve the application availability and server overload. 
 
 
-//require() and require_once() both are used to include the file but second function check the php secript  is already added or not before the execution.
+//require() and require_once() both are used to include the file but second function check the php script  is already added or not before the execution.
 
 
 //$_SERVER is a special reserved  variable which store all server information
@@ -57,7 +57,7 @@ Select Salary from employee where salaray order by salary desc limit 1,1 // if w
 // Mysql Questions
 
 
-//Function is a block of statement. A function not execute automatically on Page Load.and return value.
+//Function is a block of statement. A function not execute automatically on Page Load and return value.
 
 //Cookies and Sessions are used to store information. Cookies are only stored on the client-side machine, while sessions get stored on the client as well as the server.
 //Cookies are little text-based files that are kept on the user's computer and are accessible only by that user's browser. It is possible for a cookie's size to reach a maximum of 4 KB.
@@ -268,13 +268,12 @@ Access Modifire
 public - the property or method can be accessed from everywhere. This is default
 protected - the property or method can be accessed within the class and by classes derived from that class
 private - the property or method can ONLY be accessed within the class
-public -
 final: The class methods defined as final, can not be changed or overriden by any subclass.
-
+abstract: 
 ////////
 Interfaces allow you to specify what methods a class should implement.
 
-Interfaces make it easy to use a variety of different classes in the same way
+Interfaces make it easy to use a variety of different classes in the same way.
 
 
 
@@ -434,8 +433,41 @@ A:ALTER USER 'root'@'localhost' IDENTIFIED BY 'NewPassword';
 	==> substr function is used to like we want to show first 100 characters from string 
 	       then we use substr($string,0,100);
 		   
-		   
-		   
+
+
+synchronous in javascript
+------------	   
+		 
+In synchronous operations tasks are performed one at a time and only when one is completed, the following is unblocked. In other words, you need to wait for a task to finish to move to the next one.
+
+
+asynchronous in javascript
+------------
+In asynchronous operations, on the other hand, you can move to another task before the previous one finishes. This way, with asynchronous programming you’re able to deal with multiple requests simultaneously, thus completing more tasks in a much shorter period of time.	
+
+
+
+
+SetTimeout function
+--------------------
+Allow us to run the function once after the interval of time
+
+
+ClearTimeout function
+--------------------
+Allow us to run the function repeatedaly after the interval of time
+
+
+
+
+Dffrence between var let and const
+
+var in which we can declare the variable and assign the value again
+
+let using let we can assign the value but cannot declare 
+
+const using const we cannot declare and assign the 
+	 
 		   
 		   
 
