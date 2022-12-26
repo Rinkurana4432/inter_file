@@ -34,11 +34,12 @@ use trim() function and strip_tags() . trim function remove the blank space and 
 
 
 ->Passwords are encrypted using bcrypt()
-->All messages are encrypted using mcrypt_ecb()
+->Keep Software And Plugins Up-To-Date
 ->Pages can only be accessed when isset($_SESSION["id"]) ie logged in.
 ->error_reporting(0);to hide errors.
 ->$_POST instead of $_REQUEST
 ->mysql_real_escape_string(); for every input
+->Add HTTPS and an SSL Certificate
 
 
 My Sql Query to get second heighest salary  From database 

@@ -1,3 +1,4 @@
+
 <?php
 //function to convert string into array
 // $arr = 'Sachin';
@@ -101,21 +102,30 @@ output
   
 // }
 
+//Greatest number in array
+// $arr=array(100,11,12,0,13,10,15);
+// $temp=$arr[0];
+// foreach($arr as $x)
+// {
+	// if($x>$temp)
+	// {
+		// $temp=$x;
+	// }
+// }
+// echo "Maximum value of array = ".$tem
 
+//Smalles number in array
 
-
-
-// $numbers=array(12,23,45,20,5,6,34,17,9,56);
-// $length=count($numbers);
-// $min=$numbers[0];
-// for($i=1;$i<$length;$i++)
-  // {
-      // if($numbers[$i]<$min)
-        // {
-          // $min=$numbers[$i];
-        // }
-  // }
-// echo "The smallest number is ".$min;
+// $arr=array(100,11,12,0,13,10,15);
+// $temp=$arr[0];
+// foreach($arr as $x)
+// {
+	// if($x<$temp)
+	// {
+		// $temp=$x;
+	// }
+// }
+// echo "Minimum value of array = ".$temp;
 /*
 
 ?>
