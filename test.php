@@ -349,6 +349,21 @@ MYISAM  "is the default storage engine in MySQL
 5)Inno DB
 
 
+Mysql Storage Engine
+---------------------
+Storage engines are MySQL components that handle the SQL operations for different table types. InnoDB is the default and most general-purpose storage engine
+
+InnoDB is the most widely used storage engine with transaction support. It is an ACID compliant storage engine. It supports row-level locking, crash recovery and multi-version concurrency control. It is the only engine which provides foreign key referential integrity constraint. Oracle recommends using InnoDB for tables except for specialized use cases.
+
+MyISAM is the original storage engine. It is a fast storage engine. It does not support transactions. MyISAM provides table-level locking. It is used mostly in Web and data warehousing.
+
+Memory storage engine creates tables in memory. It is the fastest engine. It provides table-level locking. It does not support transactions. Memory storage engine is ideal for creating temporary tables or quick lookups. The data is lost when the database is restarted.
+
+CSV stores data in CSV files. It provides great flexibility because data in this format is easily integrated into other applications.
+
+Merge operates on underlying MyISAM tables. Merge tables help manage large volumes of data more easily. It logically groups a series of identical MyISAM tables, and references them as one object. Good for data warehousing environments.
+
+Archive storage engine is optimised for high speed inserting. It compresses data as it is inserted. It does not support transactions. It is ideal for storing and retrieving large amounts of seldom referenced historical, archived data.
 
 MYISAM:
 
@@ -590,11 +605,10 @@ insert()         ==> insert is used to insert the data in the database Yii::$app
 delete()         ==>$connection->createCommand()->delete('tbl_user', 'status = 1') ->execute();     
 deleteAll()
 save()
-findByPk()
-findBy()
+
 
 		   
-		   
+		https://www.javatpoint.com/laravel-relationship   
 
 
 */
