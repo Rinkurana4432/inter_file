@@ -474,7 +474,125 @@ var - in which we can declare the variable and assign the value again
 let - using let we can assign the value but cannot declare 
 
 const - using const we cannot declare and assign again
-	 
+
+
+
+Laravel
+
+PHP Artisan
+
+Artisan is the name of the command-line interface . It provides a number of helpful commands for developing your application. 
+
+
+Define composer.
+It is an application-level package manager for PHP. It provides a standard format for managing PHP software dependencies and libraries 
+
+What is HTTP middleware?
+HTTP middleware is a technique for filtering HTTP requests. Laravel includes a middleware that checks whether application user is authenticated or not.
+
+Name aggregates methods of query builder.
+Aggregates methods of query builder are: 1) max(), 2) min(), 3) sum(), 4) avg(), and 5) count().
+
+8) What do you mean by bundles?
+In Laravel, bundles are referred to as packages. These packages are used to increase the functionality of Laravel. A package can have views, configuration, migrations, routes, and tasks.
+
+
+Explain important directories used in a common Laravel application.
+Directories used in a common Laravel application are:
+
+App/: This is a source folder where our application code lives. All controllers, policies, and models are inside this folder.
+Config/: Holds the app’s configuration files. These are usually not modified directly but instead, rely on the values set up in the .env (environment) file at the root of the app.
+Database/: Houses the database files, including migrations, seeds, and test factories.
+Public/: Publicly accessible folder holding compiled assets and of course an index.php file.
+
+
+what is Eloquent ORM in laravel.
+
+Eloquent is an object relational mapper (ORM) that is included by default within the Laravel framework. it is used to get the data in the database.
+
+
+50) Define @include.
+@include is used to load more than one template view files. It helps you to include view within another view. User can also load multiple files in one view
+
+
+Laravel install Command 
+
+laravel new blog
+
+using composer
+
+composer create-project --prefer-dist laravel/laravel:^7.0 blog
+
+
+
+service container 
+
+
+Ability to manage class dependencies on object creation.
+
+
+in Laravel we can not access the controller directly . but using this we can access funtion any where.
+
+
+
+
+
+Yii Interview Questions_______________
+
+Conceptually Yii1 and Yii2 are quite similar, however Yii2 runs on newer PHP versions and utilizes namespaces
+
+Q: what is yii2.
+A: Yii 2 is one of the most popular Web programming framework written in PHP language.It can be used for developing all kinds of Web applications from blogs to e-commerce websites and ERP’s. Yii implements the MVC (Model-View-Controller) architectural pattern.
+
+Q:What are yii helpers.
+A: Helpers are static classes in Yii that simplify common coding tasks.You use a helper class in Yii by directly calling one of its static methods, like the following:
+
+use yii\helpers\Html;
+
+Q: what are formatter in yii2.
+A: Formatter are Yii application component that is used format view data in readable format for users.
+
+Q: what is component in yii2.
+A: Components are an independent set of code written to perform specific task in controllers.
+
+Q: what is active Record.
+A: Active Record provides an object-oriented interface for accessing and manipulating data stored in databases.
+
+Q: how  to get the current url in Yii framework.
+A: Yii::app()->request->getUrl() method is used to get current url in Yii framework.
+
+Q: how to install yii2 framework using composer.
+A: composer create-project --prefer-dist yiisoft/yii2-app-basic basic.
+
+Q: features of yii2 framework.
+A:  1) MVC Pattern 2) Form input and validation.3)automatic code genration.4)authentication and autherization.
+
+Q: List some database related quires in database.
+A: Find()
+      //Getting first record matching with condition
+      $user = User::find()->where(['name' => 'Abc'])->one();   
+
+FindAll(),insert(),delete(),deleteAll(),Save();
+
+Render function is used to render a view in Yii with specified layout whereas 
+Renderpartial is used to render only view layout is not included in view.
+      
+
+Lazy loading is a optimization technique for the online content.
+
+
+
+What Are the database related functions in Yii 2.0 Framework? The database related functions are:
+find()          ===> find return one record from the database.
+findAll()       ==> findall returns array of records from the database.  
+insert()         ==> insert is used to insert the data in the database Yii::$app->db->createCommand()->insert('user', [
+                     'name' => 'Sam','age' => 30,])->execute();
+delete()         ==>$connection->createCommand()->delete('tbl_user', 'status = 1') ->execute();     
+deleteAll()
+save()
+findByPk()
+findBy()
+
 		   
 		   
 
