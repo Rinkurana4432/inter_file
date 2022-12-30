@@ -98,10 +98,6 @@ for example you want set if any data is inserted then email is send then after i
 
 
 
-
-
-
-
 unique key can be NULL value but primary key cannot be a NULL Value.
 Primary key is only one in table and unique key is more than one.
 Forgien key is a primary key of another table. Its used to join two or more table . 
@@ -195,9 +191,9 @@ Go to airport show id card  for authenticate. and when you arrive the gate you s
 
 API Interview Questions
 
-REST stands for Representational State Transfer .These serverice Provide Maintainablity and scalability.
+REST stands for Representational State Transfer . REST is architectural style.it is easy to use.so it is preferred more.
 
-SOAP- Soap stands for Simple object Access Protocol.
+SOAP- Soap stands for Simple object Access Protocol. it is a protocol. so it is preferred less.
 
 SOAP is Slow and REST is Faster.
 
@@ -482,7 +478,7 @@ this function continue calling the function give time interval.
 
 
 
-Dffrence between var let and const
+Diffrence between var let and const
 
 var - in which we can declare the variable and assign the value again
 
