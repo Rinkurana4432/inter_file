@@ -251,6 +251,8 @@ of elements otherwise it will show a warning message.
 
 Helper is group of function that assist the user to perform a Specific Task.
 
+Library is a collection of tools that can be assist the process.
+
 
 
 Opps
@@ -273,7 +275,7 @@ abstract:
 ////////
 Interfaces allow you to specify what methods a class should implement.
 
-Interfaces make it easy to use a variety of different classes in the same way.
+Interfaces make it easy to use a variety of differe.nt classes in the same way.
 
 
 
@@ -284,7 +286,7 @@ A Namespace can be defined using the keyword The namespace.
 
 function overloading
 
-The OOPs feature function overloading consists same function name and the function performs various tasks according to the number of arguments.
+The OOPs feature function overloading consists same function with diffrent parameter then they have said to be function overloading.
 
 function overriding
 
@@ -604,7 +606,15 @@ save()
 
 
 		   
-		https://www.javatpoint.com/laravel-relationship   
+		https://www.javatpoint.com/laravel-relationship 
+
+
+
+backend 
+comman 
+console
+frontend
+		
 
 
 */
