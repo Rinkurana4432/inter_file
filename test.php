@@ -614,6 +614,18 @@ backend
 comman 
 console
 frontend
+
+
+
+git commands
+
+echo "# gith" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Rinkurana4432/gith.git
+git push -u origin main
 		
 
 
