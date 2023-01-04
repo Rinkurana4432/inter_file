@@ -1,0 +1,322 @@
+https://www.youtube.com/watch?v=cgiqqLo2edU
+
+https://www.youtube.com/watch?v=ZfqnUm7w6ig
+React 
+
+
+
+mysql interview Questions
+--------------------------
+
+https://www.youtube.com/watch?v=vnQauAuIGcY
+
+Mysql command to import databases
+------------------------------------
+mysql --user root --password erss_112 < C:\Users\deepa\OneDrive\Desktop\erss_112.sql
+https://www.youtube.com/watch?v=_rIcq3GC3wI
+
+
+https://www.youtube.com/watch?v=uaeKhfhYE0U
+
+
+https://www.javatpoint.com/integrate-jquery-fullcalendar-using-bootstrap-php-and-mysql
+
+===================================================
+
+
+https://canvasjs.com/php-charts/pie-chart/
+
+https://blog.openreplay.com/user-registration-and-login-with-react-and-axios  
+
+
+
+------------------------------------------------------------------------------------------------------
+https://stackoverflow.com/questions/38954352/yii2-how-to-insert-data-from-select-table-with-table-on-another-database
+
+------------------------------------------------------------------------------------------------------
+
+
+$last_id = Yii::$app->inventory->getlasttableid('purchase_order');
+		$rId = $last_id + 1;
+		$poCode = 'PUR_' . rand(1, 1000000) . '_' . $rId;
+		
+BA1QF0	
+DETERMINISTIC
+begin
+ IF(startdate IS NULL OR startdate ='' && enddate IS NULL OR enddate ='' ) THEN
+SELECT * FROM `store_item_master` as a LEFT JOIN store_item_type_master AS d ON d.type_id=a.Item_type1 LEFT JOIN store_unit_master AS e ON e.unit_id=a.measuring_unit LEFT JOIN store_item_cat_master AS f ON a.item_cat_code=f.item_cat_code LEFT JOIN store_material_issue_request AS g ON a.ITEM_CODE = g.item_code where Quantity!=0  and Flag=10;
+
+ELSE
+SELECT * FROM `store_item_master` as a LEFT JOIN store_item_type_master AS d ON d.type_id=a.Item_type1 LEFT JOIN store_unit_master AS e ON e.unit_id=a.measuring_unit LEFT JOIN store_item_cat_master AS f ON a.item_cat_code=f.item_cat_code LEFT JOIN store_material_issue_request AS g ON a.ITEM_CODE = g.item_code where Quantity!=0 and g.approval_date >= startdate and g.approval_date <= enddate and Flag=10;
+
+
+END IF;
+END
+
+
+
+
+SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+
+
+
+<--------------------------->
+
+public function test($id=''){
+		  //$this->load->library('Pdf');
+		 
+		$where="`eid` = ". 344610 . "";
+		$adduser=$this->MContact->SelectResultWhere2('attendancedata',$where);
+		$userData= $DateAndUser = [];
+		foreach ($adduser as $valueuserData) {
+			# date Difined 
+			$newdate=date('Y-m-d',strtotime($valueuserData['uploadTime']));
+			  $userData[$valueuserData['eid'].'~'.$newdate][]=$valueuserData['uploadTime'];
+		}
+		foreach ($userData as $DateAndUserid => $UserIdvalue) {
+			 $DateAndUser[$DateAndUserid] = ['out-time'=>current($UserIdvalue),'in-time'=>end($UserIdvalue)];
+		}
+		echo'<pre>';
+	       print_r($DateAndUser);
+		
+	}
+<--------------------------->	
+
+
+
+	http://10.26.0.16:8080/ErvRestServices/erv-maintanance/get?maintenanceId=553
+	
+	
+	http://10.26.0.16:8080/ErvRestServices/erv-maintanance/get?maintenanceId=<MAINTENANCE_ID>
+	
+	
+	
+	
+	
+	
+	 /*	
+		$image = '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u78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNC4yLjEtYzA0MyA1Mi4zNzI3MjgsIDIwMDkvMDEvMTgtMTU6MDg6MDQgICAgICAgICI+CiAgIDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+CiAgICAgIDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiCiAgICAgICAgICAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyI+CiAgICAgICAgIDxkYzpmb3JtYXQ+YXBwbGljYXRpb24vcGRmPC9kYzpmb3JtYXQ+CiAgICAgICAgIDxkYzpjcmVhdG9yPgogICAgICAgICAgICA8cmRmOlNlcT4KICAgICAgICAgICAgICAgPHJkZjpsaT5jZGFpbHk8L3JkZjpsaT4KICAgICAgICAgICAgPC9yZGY6U2VxPgogICAgICAgICA8L2RjOmNyZWF0b3I+CiAgICAgICAgIDxkYzp0aXRsZT4KICAgICAgICAgICAgPHJkZjpBbHQ+CiAgICAgICAgICAgICAgIDxyZGY6bGkgeG1sOmxhbmc9IngtZGVmYXVsdCI+VGhpcyBpcyBhIHRlc3QgUERGIGZpbGU8L3JkZjpsaT4KICAgICAgICAgICAgPC9yZGY6QWx0PgogICAgICAgICA8L2RjOnRpdGxlPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIj4KICAgICAgICAgPHhtcDpDcmVhdGVEYXRlPjIwMDAtMDYtMjlUMTA6MjE6MDgrMTE6MDA8L3htcDpDcmVhdGVEYXRlPgogICAgICAgICA8eG1wOkNyZWF0b3JUb29sPk1pY3Jvc29mdCBXb3JkIDguMDwveG1wOkNyZWF0b3JUb29sPgogICAgICAgICA8eG1wOk1vZGlmeURhdGU+MjAxMy0xMC0yOFQxNToyNDoxMy0wNDowMDwveG1wOk1vZGlmeURhdGU+CiAgICAgICAgIDx4bXA6TWV0YWRhdGFEYXRlPjIwMTMtMTAtMjhUMTU6MjQ6MTMtMDQ6MDA8L3htcDpNZXRhZGF0YURhdGU+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczpwZGY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGRmLzEuMy8iPgogICAgICAgICA8cGRmOlByb2R1Y2VyPkFjcm9iYXQgRGlzdGlsbGVyIDQuMCBmb3IgV2luZG93czwvcGRmOlByb2R1Y2VyPgogICAgICA8L3JkZjpEZXNjcmlwdGlvbj4KICAgICAgPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIKICAgICAgICAgICAgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iPgogICAgICAgICA8eG1wTU06RG9jdW1lbnRJRD51dWlkOjA4MDVlMjIxLTgwYTgtNDU5ZS1hNTIyLTYzNWVkNWMxZTJlNjwveG1wTU06RG9jdW1lbnRJRD4KICAgICAgICAgPHhtcE1NOkluc3RhbmNlSUQ+dXVpZDo2MmQ2YWU2ZC00M2M0LTQ3MmQtOWIyOC03YzRhZGQ4ZjllNDY8L3htcE1NOkluc3RhbmNlSUQ+CiAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgCjw/eHBhY2tldCBlbmQ9InciPz4NCmVuZHN0cmVhbQ1lbmRvYmoNMiAwIG9iag08PC9GaWx0ZXIvRmxhdGVEZWNvZGUvRmlyc3QgNC9MZW5ndGggNDgvTiAxL1R5cGUvT2JqU3RtPj5zdHJlYW0NCmjeMlUwULCx0XfOL80rUTDU985MKY62BIoFxeqHVBak6gckpqcW29kBBBgA1ncLgA0KZW5kc3RyZWFtDWVuZG9iag0zIDAgb2JqDTw8L0ZpbHRlci9GbGF0ZURlY29kZS9GaXJzdCA0L0xlbmd0aCAxNjcvTiAxL1R5cGUvT2JqU3RtPj5zdHJlYW0NCmjePMvBCsIwEEXRX5mdDaKdxCpVSqFY3AkuBNexSelA6EAyRfx7A4qPu3znAAhNU3aLTByLwVkKb1Weo7dCPPdWfNGfDOYdzFGj0VivtV4hrn6vrK40RE48Cjw4Oqi3qMoruz/WuwxrvTeV3m2w+uJbZLcMPhZdxk8r0FMSCsFHqLYII0d40Oz4lVR5Jwm+uE+UIGdBfBK49RcYKXjVth8BBgBnZztkDQplbmRzdHJlYW0NZW5kb2JqDTQgMCBvYmoNPDwvRGVjb2RlUGFybXM8PC9Db2x1bW5zIDMvUHJlZGljdG9yIDEyPj4vRmlsdGVyL0ZsYXRlRGVjb2RlL0lEWzw0REM5MUExODc1QTZENzA3QUVDMjAzQkIwMjFDOTNBMD48RjZDOTJCMzY4QThBMTM0MDg0NTdBMUQzOTVBMzdFQjk+XS9JbmZvIDYgMCBSL0xlbmd0aCAzNy9Sb290IDggMCBSL1NpemUgNy9UeXBlL1hSZWYvV1sxIDIgMF0+PnN0cmVhbQ0KaN5iYmBgYGLkPcLEwD+ViYGhh4mBkYWJ8bEkkM0IEGAAKlkDFA0KZW5kc3RyZWFtDWVuZG9iag1zdGFydHhyZWYNCjExNg0KJSVFT0YNCg==';
+
+		$path = Yii::$app->basePath .'/test/';
+		
+		// pr($path."/");die();
+		$filename ='image_'.rand().'.pdf';
+		$status = file_put_contents( $path . $filename, base64_decode($image) );
+		
+		// $status = file_put_contents($path,base64_decode($image));
+			if($status){
+			 echo "Successfully Uploaded";
+			}else{
+			 echo "Upload failed";
+			}
+		*/
+		
+		
+		
+		if(isset($_POST) && !empty($_POST)){
+
+	 		$_POST['StoreMatReceiptTemp']['item_image'] = '';
+			
+			  if(!empty($_FILES['rendom_file']['name'])){
+			  		$target_dir = Yii::$app->basePath .'/uploads/itemimages/';
+			  		$target_file = $target_dir . basename($_FILES["rendom_file"]["name"]);
+                    $uploadOk = 1;
+                    $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+                    // Check if file already exists
+                    /*
+                    if (file_exists($target_file)) {
+                    	
+                      $uploadOk = 0;
+                      Yii::$app->getSession()->setFlash('danger', 'file already exists.');
+                    
+                    }*/
+                    $_POST['StoreMatReceiptTemp']['item_image'] = basename($_FILES["rendom_file"]["name"]);
+
+                    // Allow certain file formats
+                    if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+                    && $imageFileType != "gif" && $imageFileType != "pdf" && $imageFileType != "doc" ) {
+                      
+                      Yii::$app->getSession()->setFlash('danger', 'Sorry, only JPG, JPEG,PDF,DOC, PNG & GIF files are allowed.');
+                     
+                      $uploadOk = 0;
+                    }
+
+                    // Check if $uploadOk is set to 0 by an error
+                    if ($uploadOk == 0) {
+                      echo "Sorry, your file was not uploaded.";
+                    // if everything is ok, try to upload file
+                    } else {
+                      if (move_uploaded_file($_FILES["rendom_file"]["tmp_name"], $target_file)) {
+
+                        //echo "The file ". htmlspecialchars( basename( $_FILES["rendom_file"]["name"])). " has been uploaded.";
+                         Yii::$app->getSession()->setFlash('success','The image has been uploaded.');
+                        
+                      } else {
+                        //echo "Sorry, there was an error uploading your file.";
+                        Yii::$app->getSession()->setFlash('danger', 'Sorry, there was an error uploading your file.');
+                      
+                      }
+                    }
+
+			  }
+				
+				
+			
+			 
+			 
+	
+				
+			
+
+	 		//END UPLOAD  IMAGE...
+			if(isset($_POST['Finalize'])){
+				
+				
+				
+				$doc_path = '';
+				//if(isset($_FILES['invoice_file']))
+				if($_FILES['invoice_file']['tmp_name'] != ''){
+					$upload_Tye = "Image";
+					$image_type = $_FILES['invoice_file']['type'];
+					$image_tmp_name = $_FILES['invoice_file']['tmp_name'];
+					$image_size = $_FILES['invoice_file']['size'];
+					$image_name = $_FILES['invoice_file']['name'];
+
+					$error = "";
+					$chk1 = $chk = "";
+
+					$chk = Yii::$app->fts_utility->validateImage($image_type, $image_tmp_name);
+					
+					if(empty($chk)){
+						$error = "Upload Valid Images of File  (JPG,JPEG,PNG,GIF) ";
+					}
+					
+					$chk1 = Yii::$app->fts_utility->validateImageSize($image_size);
+					if(empty($chk1)){
+						$error .= "Each image size should be less then ".FTS_Image_Size."MB";
+					}
+					
+					if(!empty($error)){
+						Yii::$app->getSession()->setFlash('danger', $error); 
+						return $this->redirect($url);
+					}
+					$data = file_get_contents($image_tmp_name);
+					$docFile = array();
+					$prv = 0;
+					$base64 = 'data:image/' . $image_type . ';base64,' . base64_encode($data);
+					$docFile['doc_ext_type']= 'Image';
+					$docFile['tmp_name']= $image_tmp_name;
+					$docFile['file_name']= $image_name;
+					$docFile['base64']= $base64;
+
+					$FTS_Documents = '/other_files/invoice_documents'; // FTS_Documents;
+
+					// $doc_path = Yii::$app->fts_utility->uploadImageTopdf($docFile, $FTS_Documents);
+					$doc_path = Yii::$app->fts_utility->uploadFileMunish($docFile['tmp_name'], $docFile['file_name'], $FTS_Documents);
+					if(empty($doc_path)){
+						Yii::$app->getSession()->setFlash('danger', "File document didn\'t uploaded. Contact Admin.");
+						return $this->redirect($url);
+					}
+					$doc_path = $doc_path;
+				}
+				
+				$res=Yii::$app->inventory->submit_mat_receipts($doc_path);				
+				Yii::$app->getSession()->setFlash('info', 'Receipt Finalized successfully!');
+				$r_url='receipt?securekey='.$menuid;
+				return $this->redirect($r_url);
+			}else{
+					if($_POST['StoreMatReceiptTemp']['expiry_date_maint'] == ''){
+						$_POST['StoreMatReceiptTemp']['expiry_date_maint'] =  date('Y-m-d');
+					}
+					
+					
+						$res=Yii::$app->inventory->insert_material_receipt($_POST['StoreMatReceiptTemp']);
+				
+				if(!empty($_POST['StoreMatReceiptTemp']['item_expiraydate'])){
+						$connection = Yii::$app->db;
+						$connection->open();
+						$sql="SELECT MAX(id) as lastid FROM store_mat_receipt_temp";    
+						$command = $connection->createCommand($sql);
+						$lastid = $command->queryOne();
+						$connection->close();
+							$maint_data = array(
+							'expiry_date' => $_POST['StoreMatReceiptTemp']['item_expiraydate'],
+							'MRN_No' => $_POST['StoreMatReceiptTemp']['MRN_No'],
+							'Dept_code' => $_POST['StoreMatReceiptTemp']['Dept_code'],
+							'Emp_code' => $_POST['StoreMatReceiptTemp']['Emp_code'],
+							'ITEM_CODE' => $_POST['StoreMatReceiptTemp']['ITEM_CODE'],
+							'lastid' => $lastid['lastid'],
+					);
+						Yii::$app->inventory->insert_expirydatedata($maint_data);
+					}
+				
+				
+				 if($_POST['StoreMatReceiptTemp']['is_annual_maint'] == 'Y'){
+						$connection = Yii::$app->db;
+						$connection->open();
+						$sql="SELECT MAX(id) as lastid FROM store_mat_receipt_temp";    
+						$command = $connection->createCommand($sql);
+						$lastid = $command->queryOne();
+						$connection->close();
+					  $maint_data = array(
+							'expiry_date_maint' => $_POST['StoreMatReceiptTemp']['expiry_date_maint'],
+							'is_annual_maint' => $_POST['StoreMatReceiptTemp']['is_annual_maint'],
+							'MRN_No' => $_POST['StoreMatReceiptTemp']['MRN_No'],
+							'Dept_code' => $_POST['StoreMatReceiptTemp']['Dept_code'],
+							'Emp_code' => $_POST['StoreMatReceiptTemp']['Emp_code'],
+							'ITEM_CODE' => $_POST['StoreMatReceiptTemp']['ITEM_CODE'],
+							'lastid' => $lastid['lastid'],
+					);
+					
+					Yii::$app->inventory->insert_maintencehistory($maint_data);
+				}
+				 
+				if($res){
+				Yii::$app->getSession()->setFlash('info', 'Receipt added successfully!');
+				$r_url='receipt?securekey='.$menuid;
+				//return $this->redirect($r_url);
+				}
+				
+
+			} 
+
+				
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+ALTER TABLE `store_mat_receipt_temp` ADD `erv_regno` VARCHAR(50) NOT NULL AFTER `Vehicle_no`;
+ALTER TABLE `store_mat_receipt` ADD `erv_regno` VARCHAR(50) NULL AFTER `Vehicle_no`;
+
+ALTER TABLE `store_mat_receipt_temp` CHANGE `erv_regno` `erv_regno` VARCHAR(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL;
+
+
+
+
+
+StoreMatReceiptTemp model chages add  erv_regno variable
+
+
+DefaultController search with    'ervnumber' Word
+
+
+Add Field after `item_expiraydate` Field in Receipt View file
+
+
+
+update stored Procedure 
+_______________________
+
+insert_material_receipt
+
+submit_mat_receipts
