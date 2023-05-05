@@ -1,0 +1,102 @@
+Traits: 
+
+With the Help of traits we can use multiple Inheritance in PHP. Because PHP is Support Single Inheitance.
+Traits are used to declare methods that can be used in multiple classes.
+
+example : 
+<?php
+trait message1 {
+public function msg1() {
+    echo "OOP is fun! ";
+  }
+}
+
+class Welcome {
+  use message1;
+}
+
+$obj = new Welcome();
+$obj->msg1();
+?>
+
+Abstract Classes:
+An abstract class is a class that contains at least one abstract method. An abstract method is a method that is declared, but not implemented. Every abstract methods defined in the abstract class must be implemented inside the extended class.
+
+Abstraction:
+The Representation of data in which hide all implementation details are hidden.
+
+Polymorphism:-
+
+Polymorphism is one of the PHP Object Oriented Programming (OOP) features.
+ There are two types of Polymorphism; they are: 
+Compile time (function overloading)
+Run time (function overriding)
+
+function overloading:--
+Function overloading is a feature that permits making several methods with a similar name that works differently.
+
+function overriding:-
+In function overriding, the parent and child classes have the same function name with and number of arguments
+
+Access modifier:
+
+public - the property or method can be accessed from everywhere. This is default.
+protected - the property or method can be accessed within the class and by classes derived from that class.
+private - the property or method can ONLY be accessed within the class.
+
+To get the nth higest salary 
+SELECT emp_name AS Employee, salary AS Salary FROM employee ORDER BY salary DESC LIMIT N-1,1;
+
+3rd higest salary
+SELECT emp_name AS Employee, salary AS Salary FROM employee ORDER BY salary DESC LIMIT 2,1;
+
+------------------------------------
+Laravel 9 was released on February 8, 2022. Laravel 10 was released on February 14, 2023.
+------------------------------------
+Laravel:
+Laravel is an open-source PHP web application framework. It is a very well documented, expressive, and easy to learn framework. Laravel is very developer-friendly as the framework can help beginners as well as advanced users.
+
+
+PHP artisan:
+Artisan is the command-line tool for Laravel to help the developer build the application. 
+Composer:
+Composer is the package manager for the framework. It helps in adding new packages from the huge community into your laravel application.
+
+3. What is the templating engine used in Laravel?
+The templating engine used in Laravel is Blade. 
+
+
+How to put Laravel applications in maintenance mode?
+
+php artisan down
+
+php artisan up
+
+
+11. What are seeders in Laravel?
+Seeders in Laravel are used to put data in the database tables automatically. After running migrations to create the tables, we can run `php artisan db:seed` to run the seeder to populate the database tables.
+
+Different relationships available in Laravel are:
+
+One to One
+One to Many
+Many to Many
+Has One Through
+Has Many Through
+One to One (Polymorphic)
+One to Many (Polymorphic)
+Many to Many (Polymorphic)
+
+middleware:
+
+middleware which checks if the user is authenticated and if the user is authenticated it will go further in the application otherwise it will throw the user back to the login screen.
+
+
+Eloquent:
+eloquent model that allows the interaction with a database. Each database table has its corresponding model that provides the interaction with a database. 
+
+select command:
+$categories = CategoryModel::select('catID', 'catName', 'imgPath')
+                           ->where('catType', '=', 'Root')
+                           ->get();
+
