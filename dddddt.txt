@@ -100,3 +100,29 @@ $categories = CategoryModel::select('catID', 'catName', 'imgPath')
                            ->where('catType', '=', 'Root')
                            ->get();
 
+//BASIC INTEVIEW Questions //
+
+1. abstract classes and interface.... Difference between abstract classes and interface
+ANS: 1. Interfaces cannot have properties, 
+     2.while abstract classes can. 
+     3.All interface methods must be public, 
+     4. while abstract class methods is public or protected
+2. overloading and overridding
+3. php unit
+4. php hint
+5. Difference between php5 and php7+
+6. Final class in php
+7. Error handling in php and types of error
+8. exception handling... default function of exception handling.
+9. array sorting without using inbuilt array function.
+10.  Static classes and functions
+
+
+
+
+
+
+
+
+
+
