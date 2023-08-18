@@ -108,8 +108,8 @@ ANS: 1. Interfaces cannot have properties,
      3.All interface methods must be public, 
      4. while abstract class methods is public or protected
 2. overloading and overridding
-3. php unit
-4. php hint
+3. php unit 2 types (1. coding testing 2) Php Unit Library )
+4. php hint meand Type Hinit 
 5. Difference between php5 and php7+
 6. Final class in php
 7. Error handling in php and types of error
