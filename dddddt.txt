@@ -118,6 +118,18 @@ ANS: 1. Interfaces cannot have properties,
 10.  Static classes and functions
 
 
+___________________
+Diffrence Between PHP 5 and Above
+1) zend engine PHP 5 , PHP 7 next Gen ,  PHP 8 Next gen
+2) PHP 5 anonumus class not use , and 7 above we use anonumus class //Its use to direct implement the class (in which no name in class)
+3) PHP 7 above verion have new inbulit 1) operators spaceship operator , 2) Null coalescing  opreator
+1.Spaceship Operator
+>> it is used for  comparission print( 1 <=> 1);
+2.Null coalescing  opreator
+   can say to remove the if else many time
+>> $username = $_GET['username'] ?? 'not passed';
+
+
 
 
 
