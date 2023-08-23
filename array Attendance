@@ -1,0 +1,26 @@
+ public function test($id=''){
+		  //$this->load->library('Pdf');
+		 
+		$where="`eid` = ". 344610 . "";
+		$adduser=$this->MContact->SelectResultWhere2('attendancedata',$where);
+		$userData= $DateAndUser = [];
+		foreach ($adduser as $valueuserData) {
+			# date Difined 
+			$newdate=date('Y-m-d',strtotime($valueuserData['uploadTime']));
+			  $userData[$valueuserData['eid'].'~'.$newdate][]=$valueuserData['uploadTime'];
+		}
+		foreach ($userData as $DateAndUserid => $UserIdvalue) {
+			 $DateAndUser[$DateAndUserid] = ['out-time'=>current($UserIdvalue),'in-time'=>end($UserIdvalue)];
+		}
+		echo'<pre>';
+	       print_r($DateAndUser);
+		
+	}
+ public function  SelectResultWhere2($table,$where)
+   {             
+                $this->db->select('*');
+                $this->db->where($where); 
+                $this->db->from($table);
+        //echo $this->db->last_query(); die;
+        return $query=$this->db->get()->result_array();
+   }
