@@ -118,6 +118,7 @@ ANS: i. Abstract class not have multiple Inheritance, In Interface We can Use Mu
 7. Error handling in php and types of error
 8. exception handling... default function of exception handling.
 9. array sorting without using inbuilt array function.
+ 
 10.  Static classes and functions
 
 
