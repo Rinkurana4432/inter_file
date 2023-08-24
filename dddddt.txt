@@ -108,6 +108,9 @@ ANS: i. Abstract class not have multiple Inheritance, In Interface We can Use Mu
      iii. In abstract class we can use any datamember Like Public Protected,Private,  And In Interface we can use public default data member. 
    
 2. overloading and overridding
+    i. When class define method have same name but diffrent type of parameter is called function Overloading.
+    ii. both parent and child classes should have same function name with and number of arguments.The purpose of overriding is to change the                behavior of parent class method
+
 3. php unit 2 types (1. coding testing 2) Php Unit Library )
 4. php hint meand Type Hinit 
 5. Difference between php5 and php7+
