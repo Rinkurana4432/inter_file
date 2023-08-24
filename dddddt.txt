@@ -103,10 +103,10 @@ $categories = CategoryModel::select('catID', 'catName', 'imgPath')
 //BASIC INTEVIEW Questions //
 
 1. abstract classes and interface.... Difference between abstract classes and interface
-ANS: 1. Interfaces cannot have properties, 
-     2.while abstract classes can. 
-     3.All interface methods must be public, 
-     4. while abstract class methods is public or protected
+ANS: i. Abstract class not have multiple Inheritance, In Interface We can Use Multiple Inheritance 
+     ii.In Absrtact have abstract OR non abstract method, In Interface have  abstract method by default.
+     iii. In abstract class we can use any datamember Like Public Protected,Private,  And In Interface we can use public default data member. 
+   
 2. overloading and overridding
 3. php unit 2 types (1. coding testing 2) Php Unit Library )
 4. php hint meand Type Hinit 
