@@ -155,6 +155,29 @@ if(error == false ){
 });	
 
 }		
- glsr-form-message glsr-form-success
+/*Script for clear form data  */
+ function clearData(formId) {
+            $("#" + formId + " input[type=text]")
+                .each(function() {
+
+                    var input = $(this);
+                    if (input.attr('type') == "text") {
+                        input.val("");
+                    }
+                });
+
+            $("#" + formId + " input[type=radio]")
+                .each(function() {
+
+                    var input = $(this);
+                    if (input.attr("checked", true)) {
+                        input.attr("checked", false)
+                    }
+
+                });
+
+            $('.error').html('');
+        }					
+					
 			
 			
