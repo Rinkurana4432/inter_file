@@ -300,23 +300,9 @@ ALTER TABLE `store_mat_receipt` ADD `erv_regno` VARCHAR(50) NULL AFTER `Vehicle_
 
 ALTER TABLE `store_mat_receipt_temp` CHANGE `erv_regno` `erv_regno` VARCHAR(50) CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NULL;
 
+Query to Match Two Tables Values
+______________________
+SELECT t1.* FROM students t1, seminar_upload_rows t2 WHERE (t1.contactNo = t2.phnno) AND ( t1.country = 25 ) GROUP by t1.contactNo ORDER BY `t1`.`id` ASC;
 
-
-
-
-StoreMatReceiptTemp model chages add  erv_regno variable
-
-
-DefaultController search with    'ervnumber' Word
-
-
-Add Field after `item_expiraydate` Field in Receipt View file
-
-
-
-update stored Procedure 
-_______________________
-
-insert_material_receipt
-
-submit_mat_receipts
+ $sqlc = "SELECT foc.*,s.visatype,s.country FROM filing_ol_collegelist foc LEFT JOIN students s ON s.id = foc.leadid
+                        WHERE foc.leadid = '$leadid' and convertStatus=1
