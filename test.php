@@ -310,7 +310,19 @@ class fruit(){
   Questions: what is object in class.
   Answers: Object is Instance of class.
   
-  
+  MYSQL view
+
+ View help to simplyfy the database management and improve query performance.
+ syntax 
+  create view view_name 
+  select cloumn name from tablname where condtions;
+  Advantage of VIEW
+	1.Simplifying complex queries
+ 	2.Security and access control
+	3.Data abstraction
+	4.Performance optimization
+	5.Code reusability
+	
   
   
   
