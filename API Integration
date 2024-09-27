@@ -11,6 +11,7 @@ $apikey = ""; $result = "";$phone_no = "";
 if(isset($_GET['phone_no']) && $_GET['phone_no']!=''){
     $phone_no = $_GET['phone_no'];
     echo "sdhfkas kasmal";
+    echo "jkdshfjshfj";
     echo "Hello there this is my first contribution to github repo!!";
 }
 
