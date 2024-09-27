@@ -10,6 +10,7 @@ header("Content-Type: application/json");
 $apikey = ""; $result = "";$phone_no = "";
 if(isset($_GET['phone_no']) && $_GET['phone_no']!=''){
     $phone_no = $_GET['phone_no'];
+    echo "Hello there this is my first contribution to github repo!!";
 }
 
 try {
