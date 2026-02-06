@@ -1,0 +1,40 @@
+ng generate module DataHub --routing
+
+ng generate component DataHub/home
+
+ng generate service DataHub/data
+
+ng generate interface DataHub/data
+
+
+
+json-server --watch db.json
+
+
+ postData(){
+    this.ds.createData(this.dataFormHub).subscribe({next:(res)=>{
+      this.router.navigate(["/Datahub/home"])
+    }})
+  }
+
+
+
+// Pull Commands angular Project
+  
+git clone https://github.com/evertonrobertoauler/universal-demo-v5.git
+cd universal-demo-v5
+git checkout cookies
+npm install
+npm run build
+node dist/server.js
+
+
+
+//Git Push Commands
+
+git init
+git status
+git add .
+git commit -m "Comment you want"
+git remote add origin  https://link
+git push  -u origin master

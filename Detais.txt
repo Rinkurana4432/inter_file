@@ -1,0 +1,1085 @@
+Oops
+----
+https://www.youtube.com/watch?v=8PGwIPHTpm0
+Class
+________
+Class is user defined Datatype . All the Properties and Methods inside the the Braces.
+
+Object
+________
+Object is instance of class.  
+
+__construct Function
+______________________
+Construct Function start with two underscore. construct function call itself when create an object inside the class.
+
+__destruct Function
+______________________
+Distruct Fucntion start with two underscore.destruct function call itself when create an object inside the class.
+
+Access Modifiers
+______________________
+public - the property or method can be accessed from everywhere. This is default.
+Protected - the property or method can be accessed within the class and by classes derived from that class.
+Private - the property or method can ONLY be accessed within the class.
+
+class Fruit {
+  public $name;
+  protected $color;
+  private $weight;
+}
+
+$mango = new Fruit();
+$mango->name = 'Mango'; // OK
+$mango->color = 'Yellow'; // ERROR
+$mango->weight = '300'; // ERROR
+
+
+Inheritance
+______________________
+Inherit all the Public protected properties and methods from the derived Class is called inheritance.
+An inherited class is defined by using the extends keyword.
+
+Constants
+________
+Constants cannot be changed once its Declare. Constants can be declare const keyword.
+
+Encapsulation
+_____________
+Encapsulation is protection mechanism for your class and data structure.
+Encapsulation is used to hide the values or state of a structured data object inside a class, preventing unauthorized parties' direct access to them.
+
+Abstract Class:
+_____________
+Abstract class are class which contains atleast one or more abstract method.
+
+Abstract Method:
+_____________
+Abstract method is a method which is declared, but not defined.
+
+Traits
+_____________
+Traits, on the other hand, are simply a method for re-using code.
+
+
+
+Laravel Interview Questions
+----------------------------
+Eloquent:--
+
+Eloquent is an object relational mapper (ORM) that is included by default within the Laravel framework. An ORM is software that facilitates handling database records by representing data as objects, 
+
+Query builder:--
+Laravel's database query builder provides a convenient, fluent interface to creating and running database queries. 
+
+Database seeding:--
+Laravel includes the ability to seed your database with data using seed classes. All seed classes
+
+
+ How can you check the installed Laravel version of a project.
+ 
+ php artisan --version
+ 
+ Q #18) What is routing?
+
+Answer: Routing is the process of accepting a request and sending it to the relevant function in the controller.
+
+Q:What are the common tools used to send emails in Laravel?
+
+Answer: The following list below shows some common tools that can be used to send emails in Laravel.
+
+Mailtrap
+Mailgun
+Mailchimp
+Mandrill
+Amazon Simple Email Service (SES)
+Swiftmailer
+Postmark
+
+
+Q What is Artisan
+
+Artisan is the name of the command-line interface included with Laravel. It provides a number of helpful commands for your use while developing your application
+
+
+Q: To enable maintenance mode, the following are some helpful laravel commands related to maintenance mode:
+
+# enable maintenance mode
+
+php artisan down
+
+# disable maintenance mode
+
+php artisan up
+
+
+ Q: What are seeders in Laravel?
+Ans: Laravel's database seeding feature allows you to quickly insert data into your database. It is helpful for development environments 
+
+
+
+
+
+
+Laravel Commands
+
+php artisan make:controller ProductController
+php artisan make:model Product
+php artisan make:migration create_products_table
+
+
+php artisan migrate
+
+Laravel Commands
+
+<?php 
+https://stackoverflow.com/questions/34545641/php-artisan-makeauth-command-is-not-defined
+
+//Local host Run command 
+  php artisan serve
+
+ 1) composer global require "laravel/installer"
+ 1) laravel new  Projectname
+
+ #command for Authenctacation Login
+ 4) composer require laravel/ui 
+ 5) php artisan ui vue --auth
+  i) npm install
+ ii) npm run dev
+ 6) php artisan migrate
+ 7) php artisan make:migration create_tableName_table  // to create Table 
+
+ 9) php artisan make:model `modelName`
+ 10 php artisan make:controller `ControllerName`
+to make component
+php artisan make:component component name
+
+https://www.linkedin.com/pulse/laravel-8-crud-tutorial-example-step-from-scratch-muhammad-rehman
+<!---- Laravel ----->
+
+1. Retrieving Data from session
+session()->get('key');
+
+2. Retrieving All session data
+session()->all();
+
+3. Remove data from session
+session()->forget('key'); or session()->flush();
+
+4. Storing Data in session
+session()->put('key', 'value');
+
+
+
+
+
+Explode Array to string.
+implode string to array.
+
+
+
+INNER JOIN: The INNER JOIN keyword selects all rows from both the tables as long as the condition satisfies
+
+LEFT JOIN: This join returns all the rows of the table on the left side of the join and matching rows for the table on the right side of join.
+
+RIGHT JOIN: RIGHT JOIN is similar to LEFT JOIN. This join returns all the rows of the table on the right side of the join and matching rows for the table on the left side of join.
+
+FULL JOIN: Get All Records from both table left and right and not matched field fill with NULL value.
+
+Left Outer Join: get us all the records from the left table regardless of whether or not they have a match in the right table.
+
+Right Outer Join: get us all the records from the right table regardless of whether or not they have a match in the left table.
+
+Full Outer Join: A full outer join would give us all records from both tables, whether or not they have a match in the other table.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Laravel 
+------
+$imageName = time().'.'.$request->image->extension();  
+     
+$request->image->move(public_path('images'), $imageName);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In PHP Upload FILE
+------------------
+move_uploaded_file($_FILES["photo"]["tmp_name"], "upload/" . $filename);
+
+
+in CodeIgniter, Inhibitor is an error handler class that uses native PHP functions
+
+
+To load multiple helper files, specify them in an array,
+
+$this->load->helper(  
+array('helper1', 'helper2', 'helper3')  
+);  
+
+
+Class − This is a programmer-defined data type, which includes local functions as well as local data. You can think of a class as a template for making many instances of the same kind (or class) of object.
+
+Object − An individual instance of the data structure defined by a class. You define a class once and then make many objects that belong to it. Objects are also known as instance.
+
+Member Variable − These are the variables defined inside a class. This data will be invisible to the outside of the class and can be accessed via member functions. These variables are called attribute of the object once an object is created.
+
+Member function − These are the function defined inside a class and are used to access object data.
+
+Inheritance − When a class is defined by inheriting existing function of a parent class then it is called inheritance. Here child class will inherit all or few member functions and variables of a parent class.
+
+Parent class − A class that is inherited from by another class. This is also called a base class or super class.
+
+Child Class − A class that inherits from another class. This is also called a subclass or derived class.
+
+Polymorphism − This is an object oriented concept where same function can be used for different purposes. For example function name will remain same but it take different number of arguments and can do different task.
+
+Overloading − a type of polymorphism in which some or all of operators have different implementations depending on the types of their arguments. Similarly functions can also be overloaded with different implementation.
+
+Data Abstraction − Any representation of data in which the implementation details are hidden (abstracted).
+
+Encapsulation − refers to a concept where we encapsulate all the data and member functions together to form an object.
+
+Constructor − refers to a special type of function which will be called automatically whenever there is an object formation from a class.
+
+Destructor − refers to a special type of function which will be called automatically whenever an object is deleted or goes out of scope.
+
+
+
+
+
+Polymorphism is process to use same function with diffrent behaviour in  diffrent class
+
+
+Abstraction is used to hide some usefull information to user and in with class name is start with abstract 
+
+
+
+
+
+PHP Artisan: The Laravel PHP artisan serve command helps running applications on the PHP development server
+
+
+Composer : is a  tool  for dependancy management in php . its allow you to declare the library.
+
+
+
+
+
+-----------------------------------
+
+
+Insert
+
+$id = DB::table('users')-> insertGetId(array('email_id' => $email_id,
+        'name' => $name,
+));
+
+
+
+$lastInsertedID = DB::table('users')->insert( array('email_id' => $email_id,'name' => $name))->lastInsertId();
+
+
+
+CodeIgniter File/Folder/Directory Structure
+
+
+Let’s now look at the above files in CodeIgniter Structure:
+
+application – this is the directory that will contain your application logic. All of your application code will be contained in this directory
+
+system – this folder contains the framework core files. It is not advised to make changes in this directory or put your own application code into this directory.
+
+user_guide – this directory contains the user manual for CodeIgniter.
+
+vendor – this directory contains composer packages source code. The other files related to this directory are composer.json and composer.lock
+
+index.php – this is the entry point into the application.
+
+
+
+Laravel
+
+app	- The app directory holds the base code for your Laravel application.
+bootstrap	- The bootstrap directory contains all the bootstrapping scripts used for your application.
+config - 	The config directory holds all your project configuration files (.config).
+database -	The database directory holds your database files.
+public	- The public directory helps to start your Laravel project and maintains other necessary files such as JavaScript, CSS, and images of your project.
+resources - 	The resources directory holds all the Sass files, language (localization) files, templates (if any).
+routes	- The routes directory contain all your definition files for routing, such as console.php, api.php, channels.php, etc.
+storage	- The storage directory holds your session files, cache, compiled templates as well as miscellaneous files generated by the framework.
+test	 - The test directory holds all your test cases.
+vendor -	The vendor directory holds all composer dependency files.
+
+
+
+
+
+
+
+https://www.geeksforgeeks.org/how-to-create-an-app-in-django/
+
+
+
+
+
+
+php artisan make:controller HomeController
+
+
+
+SOAP = Simple Object Access Protocol.its used to send data from one device to another device in XML format.
+
+
+
+
+REST= Reprsentational State Transfer.its used to send data from one device to another device using JSON Format.its simple Than SOAP.
+
+
+
+Array Function
+
+Array_chunks => Split array into chunks.
+Array_count => Count array Values .
+
+Array_combine =>  is used to first array is Key and second array is Value.
+
+array_merge() => Function: The array_merge() function is used to merge two or more arrays into a single array.  The merging occurs in such a manner that the values of one array are appended at the end of the previous array.
+
+
+warning error Stop execution
+
+Notice error Does not stop Execution.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data Table Descending order using datatable Functionality
+
+data-order='[[1,"desc"]]'
+
+
+https://cognitiveclass.ai/courses/python-for-data-science
+
+
+
+https://css-tricks.com/snippets/javascript/javascript-keycodes/
+
+https://my.gstzen.in/p/gstr1-json-validator/
+
+
+
+
+
+
+
+https://stackoverflow.com/questions/51836327/how-to-add-days-in-current-days-dynamically-in-php
+
+
+
+
+Paypal Live Details
+-------------------
+Email: lsplpkl@gmail.com 
+password: vishnugupta@624
+
+Gmail Password: vIr3nd9090
+
+
+Git hub Password
+---------------
+dev@lastingerp.com
+RZ#9Y^bPs=XML
+
+
+RZ#9Y^bPs=XML
+
+
+
+lastingerp@123
+
+---------------------------
+Gmail Password
+____________________________________________
+
+https://stackoverflow.com/questions/3286749/array-sum-of-value-based-on-same-key
+
+
+
+username: busybanda
+pass: bc{N_~3BstEZ
+
+
+milestone2612@gmail.com
+Polo@9937
+------------------------------------------------------------------------
+Pride Diesel Crredentials
+
+http://pridediesel.com/pride-accounting
+Host: ftp.pridegroupenterprises.com
+User: Abi@pridediesel.com
+Password: Ad%2020
+Port: 21
+​
+Cpanel 
+------
+URL: http://pridegroupenterprises.com/cpanel
+User: pridelog
+Pass: Temp12345@
+
+Bimla Traders LOgin Details
+-----------------
+
+
+
+
+
+
+
+
+===============================
+
+
+https://www.webslesson.info/2018/04/codeigniter-pdf-generation-using-dompdf.html
+
+
+
+
+https://stackoverflow.com/questions/40777597/send-pdf-in-email-without-saving-it-on-server-using-codeigniter
+
+
+
+https://www.trmarketreadycatalogue.com/
+
+
+
+https://my.ebharatgas.com/LPGServices/FindLPGID
+
+
+
+https://www.youtube.com/watch?v=JOkS2Xk7SV0
+https://www.youtube.com/watch?v=k5E2AVpwsko
+
+
+https://agriharyana.org/farmer/login
+
+
+https://www.agriharyanacrm.com/
+
+
+UserName / उपयोगकर्ता नाम: 9466740491
+Password / पासवर्ड: Ravi45880039
+
+UserName / उपयोगकर्ता नाम: 9466740492
+Password / पासवर्ड: Urmi80970040
+
+970217694588
+------------------------------------
+//https://www.countdownapi.com/docs/ebay-product-data-api/overview
+
+
+
+
+
+
+
+https://www.oreilly.com/library/view/ebay-commerce-cookbook/9781449343859/ch01.html
+------------------------------------
+
+
+
+http://freecodecamp.org/news/angular-8-tutorial-in-easy-steps/
+
+http://www.risersoft.com/gst-nirvana-return-filing/csv-format/gstr1
+
+
+
+
+
+
+
+
+============================================================================================
+virus scan LINK
+------------------
+
+https://sitecheck.sucuri.net/
+
+
+https://app.webinspector.com/public/tasks/92442019
+
+
+
+
+=============================================================================================
+SMTP issues files
+
+https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting
+
+
+http://myrightcode.com/send-email-using-php-mailer-codeigniter/
+
+
+
+
+
+
+
+//Chat  Link 
+
+https://www.livechatinc.com/pricing/
+
+
+
+
+Bakup Multiple Table using PHP
+
+https://stackoverflow.com/questions/40885525/multiple-table-back-up-from-mysql-using-php
+
+
+
+3022097061
+
+9690340004
+
+=====================================================================================================
+
+Number : <input type="text" name="quantity" id="quantity" />&nbsp;<span id="errmsg"></span>
+
+
+$(document).ready(function () {
+  //called when key is pressed in textbox
+  $("#quantity").keypress(function (e) {
+     //if the letter is not digit then display error and don't type anything
+     if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+        //display error message
+        $("#errmsg").html("Digits Only").show().fadeOut("slow");
+               return false;
+    }
+   });
+});
+
+=======================================================================================================
+
+
+function float_validation(event, value){
+    if(event.which < 45 || event.which > 58 || event.which == 47 ) {
+          return false;
+            event.preventDefault();
+        } // prevent if not number/dot
+
+        if(event.which == 46 && value.indexOf('.') != -1) {
+            return false;
+            event.preventDefault();
+        } // prevent if already dot
+
+            if(event.which == 45 && value.indexOf('-') != -1) {
+                return false;
+            event.preventDefault();
+        } // prevent if already dot
+
+        if(event.which == 45 && value.length>0) {
+            event.preventDefault();
+        } // prevent if already -
+
+    return true;
+
+};
+
+
+<input type="text" onkeypress="return float_validation(event, this.value)" class="form-control"/>
+
+
+
+
+
+
+
+https://codepedia.info/editor-example/jquery-allow-numbers-decimal-textbox-example/
+
+SELECT `ledger`.`id` as `ledgerid`, `transaction_dtl`.*, `ledger`.* FROM `ledger` LEFT JOIN `transaction_dtl` ON `ledger`.`id` = `transaction_dtl`.`ledger_id` WHERE ledger.id = 415 AND `ledger`.`created_by_cid` = '3' ORDER BY `ledger`.`account_group_id` ASC
+
+
+
+=====================================================
+<?php if($val_branch->add_id == $_POST['selected_branch_idd']){ ?> selected="selected" <?php }?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://stackoverflow.com/questions/19751354/how-to-import-sql-file-in-mysql-database-using-php
+
+
+Multi GSTIN Number 
+https://www.youtube.com/watch?v=Kh1jc6ITpNA
+https://www.youtube.com/watch?v=4SmVyWtIzjM
+
+
+
+
+
+$mat_details = json_decode($invoce_cal['descr_of_goods'],true);
+						$num = 1;
+							foreach($mat_details as $dtl){
+								//pre($dtl);
+								$total_mat_amt = $dtl['amount'] - $dtl['added_tax_Row_val'];
+						$mat_array[] =	array(
+										'num'=> $num,
+										'itm_det'=>array(
+											   'txval'=>$total_mat_amt,
+											   'rt'=>$dtl['tax'],
+											   'iamt'=>$dtl['added_tax_Row_val'],
+											   'csamt'=>$dtl['cess']
+										),
+										
+									 );
+							$num++;		 
+							}
+
+
+
+https://www.trmarketreadycatalogue.com
+
+
+https://github.com/googlemaps/
+
+UPLOAD IMAGE AND VIDEO USING API
+
+	if($_REQUEST['ad_type'] == 'image'){		   
+				$path = $_SERVER['DOCUMENT_ROOT'] . "/admin/ads_info/";
+		    	$img_ext = $_REQUEST["img_ext"];
+			    $filename ='image_'.rand().''.$img_ext;
+		    	$path_image = "ads_info/".$filename;
+			    file_put_contents( $path."/" . $filename, base64_decode($_REQUEST["ads_data"]) );
+			}else{
+			 
+			   $vdo_ext = $_REQUEST["img_ext"];
+			   $filename ='video_'.rand().''.$vdo_ext;
+			   $uploadedFile = $_FILES['ads_data']['tmp_name'];
+			   $path_image = "ads_info/".$filename;
+			   $destination = $_SERVER['DOCUMENT_ROOT'] . "/admin/ads_info/".$filename;
+			   move_uploaded_file($uploadedFile, $destination);
+			}
+			
+	// strip tags to avoid breaking any html
+$string = strip_tags($string);
+if (strlen($string) > 500) {
+
+    // truncate string
+    $stringCut = substr($string, 0, 500);
+    $endPoint = strrpos($stringCut, ' ');
+
+    //if the string doesn't contain any space then it will cut without word basis.
+    $string = $endPoint? substr($stringCut, 0, $endPoint) : substr($stringCut, 0);
+    $string .= '... <a href="/this/story">Read More</a>';
+}
+echo $string;		
+			
+SET GLOBAL sql_mode=(SELECT REPLACE(@@sql_mode,'ONLY_FULL_GROUP_BY',''));
+
+HMMMM
+616490220
+----------------------------
+
+
+
+vanshaj28gupta@gmail.com
+----------------------------------------------------------------
+
+Formula to add data according to column
+
+="[{""ID"":1,""mailing_name"":""" &A2 &""",""mailing_address"":""" &V2  & """,""mailing_country"":""" &S2 & """,""mailing_state"":""" &T2  & """,""mailing_city"":"""",""mailing_pincode"":""" &Q2 & """}]"
+
+
+="[{""ID"":1,""mailing_name"":""" &A2 &""",""mailing_address"":""" &R2  & """,""mailing_country"":""" &S2 & """,""mailing_state"":""" &T2  & """,""mailing_city"":"""",""mailing_pincode"":""" &U2 & """,""gstin_no"":""" &P2  & """}]"
+
+
+
+="[{""ID"":1,""mailing_name"":""" &A2 &""",""mailing_address"":""" &X2  & """,""mailing_country"":""" &T2 & """,""mailing_state"":""" &U2  & """,""mailing_city"":"""",""mailing_pincode"":""" &V2 & """,""gstin_no"":""" &W2  & """}]"
+
+
+
+
+
+
+
+
+https://www.programiz.com/python-programming/first-program
+
+
+https://codeshack.io/login-system-python-flask-mysql/fgst
+
+
+
+3022097061
+
+//pre($product_detll);
+					function product_id_exists($product_detll, $array) {
+							$result = -1;
+							for($i=0; $i<sizeof($array); $i++) {
+								if ($array[$i]['product'] == $product_detll) {
+									$result = $i;
+									break;
+								}
+							}
+							return $result;
+						}
+					$mat_details = array();
+						foreach($product_detll as $bank) {
+							$index = product_id_exists($bank['product'], $mat_details);
+							if ($index < 0) {
+								$mat_details[] = $bank;
+							}
+							else {
+								$mat_details[$index]['quantity'] +=  $bank['quantity'];
+							}
+						}
+						
+
+						
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
++14389794200
+
+
+
+
+$('.half_input_date').datepicker({
+		changeMonth: true,
+        changeYear: true,
+		dateFormat: 'dd/mm/yy',
+		yearRange: '1998:2050',
+		onSelect: function(selected) {
+          $(".datepikcls").datepicker("option","minDate", selected)
+        }
+		
+	});
+	
+		$('.datepikcls').datepicker({
+		changeMonth: true,
+        changeYear: true,
+		dateFormat: 'dd/mm/yy',
+		yearRange: '1998:2050',
+		onSelect: function(selected) {
+           $(".half_input_date").datepicker("option","maxDate", selected)
+        }
+		
+	});
+	
+	
+	
+	$( "#planned_release_dates_from_Date" ).datepicker({
+		minDate: 0,
+		changeMonth: true,
+        changeYear: true,
+		dateFormat: 'dd/mm/yy',
+		onSelect: function(selected) {
+          $("#planned_release_dates_to_Date").datepicker("option","minDate", selected)
+        }
+       // showButtonPanel: true
+		});
+	$( "#planned_release_dates_to_Date" ).datepicker({
+		minDate: 0,
+		changeMonth: true,
+        changeYear: true,
+		dateFormat: 'dd/mm/yy',
+		onSelect: function(selected) {
+           $("#planned_release_dates_from_Date").datepicker("option","maxDate", selected)
+        }
+        //showButtonPanel: true
+		});
+
+
+
+
+
+
+
+
+
+
+/*Twilio Code */
+    public function send_sms($content,$pno){
+		
+              $contact_num22 = '91'.$pno;
+          
+            require $_SERVER['DOCUMENT_ROOT']. '/application/libraries/twilio/src/Twilio/autoload.php';
+            $contact_num = '+'.$contact_num22;
+           // $contact_num = '+'.'919875929459';
+           //$otp = rand(1111,9999);
+			//'from' => "+14784490852",
+            
+            // $AccountSid = "ACe955f4854cbca5fb2c2cfef15a6c0c50";
+            // $AuthToken = "72ecdf3cafbacf150b609e7a3f2db7ec"; 
+			
+			$AccountSid = "AC7448db8181bb8cff1515c2c1acc654d5";
+            $AuthToken = "bdc125ee135553277b439b074c8e174b";
+            
+            // Step 3: instantiate a new Twilio Rest Client
+            $class = 'Twilio\Rest\Client';
+            $client = new $class($AccountSid, $AuthToken);
+            // pre($client);die();
+            $people = array(
+                $contact_num => "Sender Name"
+            );
+            
+            try {
+                foreach ($people as $number => $name) {
+                        $sms = $client->account->messages->create(
+                        $number,
+                        array(
+                            'from' => "+19726943797",
+                            'body' => $content
+                        )
+                    ); 
+    
+                }
+            } 
+            catch(Exception $e) {
+				//pre($e);die();
+            //echo '{"Status":"false","Data":"Otp Not send"}';
+        }
+		//die();
+    }
+/*Twilio Code */
+
+
+
+
+
+
+
+
+https://mbahcoding.com/tutorial/php/codeigniter/codeigniter-simple-server-side-datatable-example.html
+
+
+
+ $(document).on('click','.select2-selection__clear',function(){
+      $('.compny_unit').val("").trigger('change');
+      $('.department').val("").trigger('change');
+ }) 
+ 
+ 
+ function removeSelecteddata(){
+  $(document).on('click','.select2-selection__clear',function(){
+      $('.selectid').val("").trigger('change');
+  })
+}
+
+
+   var tdate = new Date();
+   var dd = tdate.getDate(); //yields day
+   var MM = tdate.getMonth(); //yields month
+   var yyyy = tdate.getFullYear(); //yields year
+   var currentDate= dd + "/" +( MM) + "/" + yyyy;
+   var twoDigitYear = currentDate.toString().substr(-2);
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+____________________________________________________________________________
+add_action( 'woocommerce_admin_order_data_after_order_details', 'diliveryBoy_custom_meta' );
+
+	function diliveryBoy_custom_meta( $order ){
+		$args = array(
+		'role'    => 'delivery_boy',
+		//'orderby' => 'user_nicename',
+		'order'   => 'ASC'
+	);
+	$users = get_users( $args );
+
+	echo '<select style="font-size: 14px;line-height: 2;color: #444; border-color: #8c8f94;box-shadow: none;border-radius: 3px;margin-top: 10px;
+    width: 100%" >';
+	echo '<option value="">Select Delivery Boy</option>';
+	foreach ( $users as $user ) {
+		 echo '<option value="'.$user->id.'">' . esc_html( $user->display_name ).'</option>';
+		// echo '<li>' . esc_html( $user->display_name ) . '[' . esc_html( $user->user_email ) . ']</li>';
+	}
+	echo '</select>';
+		
+	}
+
+
+	
+
+	
+	
+	$where = array('email' => $data['email']);
+					$checkEmail = $this->inventory_model->get_data('uom', $where);
+					
+					
+oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "10"
+
+
+
+
+	// $data_string = json_encode($postData);
+			$ch = curl_init('https://commonapi.mastersindia.co/commonapis/searchgstin');
+			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
+			curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
+			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+			curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json','Content-Length: ' . strlen($data_string)));
+			$result = curl_exec($ch);
+			
+			pre($result);die();	
+
+
+
+
+
+
+
+$image = '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';
+
+		$path = Yii::$app->basePath .'/test/';
+		
+		// pr($path."/");die();
+		$filename ='image_'.rand().'.jpg';
+		$status = file_put_contents( $path . $filename, base64_decode($image) );
+		
+		// $status = file_put_contents($path,base64_decode($image));
+			if($status){
+			 echo "Successfully Uploaded";
+			}else{
+			 echo "Upload failed";
+			}
+		
+		die();
+		
+		
+		
+		$image = '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';
+					if(empty($image)){
+						Yii::$app->getSession()->setFlash('info', 'Receipt not added Please confirm Invoice Image !');
+						$r_url='receipt?securekey='.$menuid;
+						return $this->redirect($r_url);
+					}
+					$path = Yii::$app->basePath .'/other_files/invoice_documents/';
+					$filename ='image_'.rand().'.jpg';
+					$status = file_put_contents( $path . $filename, base64_decode($image) );
+					$doc_path = '/other_files/invoice_documents/'.$filename; // FTS_Documents;
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+require './PHPMailer/class.phpmailer.php';
+		require_once './PHPMailer/PHPMailerAutoload.php';
+                $mail = new \PHPMailer;  
+				$mail->SMTPDebug = 2;
+				$mail->SMTPOptions = array(
+				'ssl' => array(
+					'verify_peer' => false,
+					'verify_peer_name' => false,
+					'allow_self_signed' => true
+				)
+			);// Enable verbose debug output
+			$mail->isSMTP();                                            // Send using SMTP
+			$mail->Host       = 'mail.haryanadial112.com';                    // Set the SMTP server to send through
+			//$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+			$mail->SMTPAuth = true;
+			$mail->SMTPAutoTLS = false; 
+			
+			$mail->Username   = 'haryanad';                     // SMTP username
+			$mail->Password   = 'Q79q*rg6EMs9:M';                                // SMTP password
+			$mail->SMTPSecure = 'tls';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
+			$mail->Port       = 587;
+			$mail->Timeout = 7200;       
+			$mail->addAddress('dsingh0032@gmail.com','test');     // Add a recipient
+			$mail->setFrom('dev@test.com','Dharamveer');
+			$mail->isHTML(true);
+			// Email body content
+			$mailContent = 'Hello There';
+			$mail->Body = $mailContent;
+			$mail->Subject = 'Test Email';
+			//$mail->addAttachment($pdfFilePath);
+			//$mail->send();
+			if($mail->send()){
+				echo 'Email Send';
+            }else{
+              echo "Mailer Error: " . $mail->ErrorInfo;
+              die;
+            }
