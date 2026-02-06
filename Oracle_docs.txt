@@ -1,0 +1,154 @@
+Oracle Database server have two component
+1. Instance 
+2. Database
+
+Instance ---> Logical (for example we cannot check any person memory its logical ) 
+
+Database ---> Physical(for example we can check any data in dairy)
+
+
+https://www.youtube.com/watch?v=oK6Htio8WDY&list=PLZpjHl7ROJxasUV9nDNkDmCHw_nDcIJsh&index=5
+
+Instance have also two component 
+
+1.SGA(system global Area)  
+
+2.BG (Background) Process
+
+SGA Component
+_____________
+
+i)  DB buffer Cache
+ii) Log Buffer
+iii) Shared Pool
+iV) JAVA Pool 
+V) Large Pool
+
+
+Data base buffer Cache => In which data is saved. and its have buffer cache if any user need any request any data  then oracle databse cache main check karta hai ki vo info hai ya nahi. if information have in  database buffer then its get from database buffer and give to the user. agar info nahi hoti then he check database file datafiles read lock file and give to the user.
+
+Types of Database Buffer 
+
+1) Free buffer  ===> Buffer are free and ready to use
+2) Pinned Buffer ===> user currently used by any user 
+3) Dirty Buffer  ===> buffer already changed by any user.
+4) Clean Buffer  ===> its used for select data for any user request
+5) Undo Buffer ===> save the change value any have a value and change value is B then a value is saved in Undo buffer changed value ki previous image
+
+
+data base buffer have three types of pools 
+
+==>Types of Pools in brackets is used to mention the size of pools
+1) Keep Pool   ====> Those table have used bar bar those have saved in keep pool if we cannnot save in keep full take a time for data fetch.(DB_KEEP_CACHE_SIZE)
+2) Recycle Pool ===> Those Table have used rarely those have saved in recycle Pool.(DB_RECYCLE_CACHE_sIZE)
+3) Default Pool ===> Those table has not in keep pool and not recycle pool those have in default pool. if we not mantetion above pool then all data in defaultpool.(DB_CACHE_SIZE)
+
+
+SGA second part Shared Pool its a second largest part its have two part :
+Library Cache
+Data Dictonary Cache.
+
+
+
+
+when any user fire a query example 
+Select * from emp; (its make a server process.)
+first Server Process Check 
+1.  check any syntax error in query 
+2. check Table exist or not in Db.
+3. then make a Plan  execute the Query after ececution data goes to database buffer cache and user ko mil jaygi
+
+===> after some time second user come and fire same query Plan then same server Process used (here same query all Plan ececute many time to over come we use parsing) 
+to over come the server process (parsing )we used shared pool.
+
+shared pool goal excution plan save 
+
+To avoid parsing used shared pool.
+
+when same user come with same query the server process used shared pool and excute direct Plan.
+
+using shared pool take less execution time.
+
+Shared Pool have two part 
+i) Library Cache 
+ii) Data Dictonary Cache.
+
+Redo Log Buffer is a Part of SGA
+
+in which all Changes record are saved in this buffer.Like Insert update delete we can revert using this log buffer.
+
+its used for recovery.
+
+Redo log buffer Log_bufffer is initilize paramter to change the size.
+
+Redo log buffer is used for Data recovery.
+
+Another SGA comoponet 
+
+JAVA POOL memory component. (for better perfrmance we used large pool)
+LARGE POOL  memory component.
+Stream Pool
+
+Large pool is used for big operation in which have used large memory. Like RMAN Backup in which we used Large POOL.
+
+when we used shared Server we used Larege server .
+
+when we any job parllaly like run from Multiple channel when we used large pool.
+
+basically its used for Large operation.
+
+shared pool is good for Performance.
+
+LARGE_POOL_SIZE to check Size.
+
+
+Steram Pool is feature to one server another server replicate then we use stream pool using this we stream pool memory . 
+
+JAVA POOL ==> memory comoponet its used for java related then we use JAVA Pool ; 
+
+
+Oracle Back ground Process
+
+SMON System monitor system
+PMON Process Monitor 
+DBWR DB Writer
+LGWR Log Writer
+CKPT Check Point 
+
+
+SMON System monitor system ==> its have two work 
+
+Instance Crash recovery
+Clean Temprary Segment unwanted segment remove using this  
+
+
+Instance REcovery have two types 
+1) Roll Forward 
+2) Roll Back 
+
+when data base Crashed then databse is in consitant mode if its in this mode then database is not start.SMON check data base is in consitant mode or not. if its in not constant mode then recovery in two phase   
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
